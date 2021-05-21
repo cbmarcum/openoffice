@@ -121,6 +121,11 @@
      <value xml:lang="en-US">.uno:SaveAs</value>
     </prop>
    </node>
+   <node oor:name="T_MOD1" oor:op="replace">
+   <prop oor:name="Command">
+    <value xml:lang="en-US">.uno:About</value>
+   </prop>
+  </node>
    <node oor:name="U_MOD1" oor:op="replace">
     <prop oor:name="Command"><value xml:lang="x-no-translate">I10N SHORTCUTS - NO TRANSLATE</value>
      <value xml:lang="es">.uno:AddDirect</value>
