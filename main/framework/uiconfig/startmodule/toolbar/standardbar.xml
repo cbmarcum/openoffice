@@ -30,4 +30,5 @@
  <toolbar:toolbarseparator/>
  <toolbar:toolbaritem xlink:href=".uno:HelpIndex"/>
  <toolbar:toolbaritem xlink:href=".uno:ExtendedHelp" toolbar:visible="false"/>
+ <toolbar:toolbaritem xlink:href=".uno:Quit"/>
 </toolbar:toolbar>
