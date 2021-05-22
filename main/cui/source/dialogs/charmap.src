@@ -132,7 +132,7 @@ ModalDialog RID_SVXDLG_CHARMAP
 	};
 	PushButton BTN_NOIDEA
 		{
-			Pos = MAP_APPFONT ( 242, 48 ) ;
+			Pos = MAP_APPFONT ( 242, 63 ) ;
 			Size = MAP_APPFONT ( 50, 12 ) ;
 			Text [ en-US ] = "~No Idea" ;
 		};
