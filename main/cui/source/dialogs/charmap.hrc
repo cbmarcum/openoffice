@@ -36,6 +36,7 @@
 #define BTN_CHAR_CANCEL	18
 #define BTN_CHAR_HELP	19
 #define BTN_DELETE		20
+#define BTN_NOIDEA		21
 #define FT_SUBSET		30
 #define LB_SUBSET		31
 #define ED_SHORTCUT		32

@@ -94,6 +94,7 @@ friend class SvxCharacterMap;
     CancelButton    aCancelBtn;
     HelpButton      aHelpBtn;
     PushButton      aDeleteBtn;
+    PushButton      aNoIdeaBtn; // tutorial charmap
 //    PushButton		aAssignBtn;
     SvxShowText     aShowChar;
     FixedText       aCharCodeText;
@@ -110,6 +111,7 @@ friend class SvxCharacterMap;
     DECL_LINK( CharHighlightHdl, Control* pControl );
     DECL_LINK( CharPreSelectHdl, Control* pControl );
     DECL_LINK( DeleteHdl, PushButton* pBtn );
+    DECL_LINK( NoIdeaHdl, PushButton* pBtn );
     DECL_LINK( AssignHdl, PushButton* pBtn );
 };
 
