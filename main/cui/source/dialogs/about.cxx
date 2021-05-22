@@ -283,6 +283,7 @@ namespace
 AboutDialog::AboutDialog( Window* pParent, const ResId  & rId ) :
     SfxModalDialog( pParent, rId ),
     maOKButton( this, ResId( RID_CUI_ABOUT_BTN_OK, *rId.GetResMgr() ) ),
+	maOKSureButton( this, ResId( RID_CUI_ABOUT_BTN_OK, *rId.GetResMgr() ) ),
     maReadmeButton( this, ResId( RID_CUI_ABOUT_BTN_README, *rId.GetResMgr() ) ),
     maVersionText( this, ResId( RID_CUI_ABOUT_FTXT_VERSION, *rId.GetResMgr() ) ),
     maBuildInfoEdit( this, ResId( RID_CUI_ABOUT_FTXT_BUILDDATA, *rId.GetResMgr() ) ),
@@ -473,6 +474,13 @@ void AboutDialog::LayoutControls( Size& aDlgSize )
     Size aOKSiz = maOKButton.GetSizePixel();
     Point aOKPnt( ( aDlgSize.Width() - aOKSiz.Width() ) - a6Size.Width(), nY );
     maOKButton.SetPosPixel( aOKPnt );
+    
+    // OK-Sure-Button-Position (at the bottom and centered) added for tutorial
+    Size aOKSureSiz = maOKSureButton.GetSizePixel();
+    Point aOKSurePnt = maOKSureButton.GetPosPixel();
+    aOKSurePnt.X() = -135 + ( aDlgSize.Width() - aOKSureSiz.Width() ) - a6Size.Width();
+    aOKSurePnt.Y() = nY;
+    maOKSureButton.SetPosPixel( aOKSurePnt );
 
     maReadmeButton.SetPosPixel( Point(a6Size.Width(), nY) );
 

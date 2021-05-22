@@ -38,6 +38,7 @@ class AboutDialog : public SfxModalDialog
 {
 private:
     OKButton            maOKButton;
+    OKButton            maOKSureButton;
     PushButton          maReadmeButton;
     FixedInfo           maVersionText;
     MultiLineEdit       maBuildInfoEdit;
