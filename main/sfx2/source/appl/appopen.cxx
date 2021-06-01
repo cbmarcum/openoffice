@@ -947,9 +947,11 @@ void SfxApplication::OpenDocExec_Impl( SfxRequest& rReq )
                 case INET_PROT_HTTP:
                 case INET_PROT_HTTPS:
 		    bSafeExtension = true; // trust the browser to prevent unsafe extensions
+                // Fall-through
                 // case INET_PROT_FTP:
                 case INET_PROT_VND_SUN_STAR_HELP:
                 case INET_PROT_MAILTO:
+                case INET_PROT_FILE:
                     bUnsafeProtocol = false;
                     break;
                 default: // Anything else, including INET_PROT_FILE
