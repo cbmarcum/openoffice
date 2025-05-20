@@ -456,6 +456,7 @@ void FontCfgWrapper::addFontSet( FcSetName eSetName )
 		if( m_nFcVersion > 20400 ) // #i115204# avoid trouble with old FC versions
 		{
 			FcPattern* pTestPattern = FcPatternDuplicate( pOrigPattern );
+            FcDefaultSubstitute( pTestPattern );
 			FcPatternAddBool( pTestPattern, FC_OUTLINE, FcTrue );
 			// TODO: ignore all attributes that are not interesting for finding dupes
 			//       e.g. by using pattern->ImplFontAttr->pattern conversion
@@ -893,7 +894,7 @@ bool PrintFontManager::addFontconfigDir( const rtl::OString& rDirName )
         return false;
 
     // workaround for a stability problems in older FC versions
-    // when handling application specifc fonts
+    // when handling application specific fonts
     const int nVersion = rWrapper.FcGetVersion();
     if( nVersion <= 20400 )
         return false;
@@ -1295,4 +1296,3 @@ rtl::OUString PrintFontManager::Substitute( const rtl::OUString&,
 }
 
 #endif // ENABLE_FONTCONFIG
-

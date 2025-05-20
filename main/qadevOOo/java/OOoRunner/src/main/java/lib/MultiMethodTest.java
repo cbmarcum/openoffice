@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,18 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
 
 
 package lib;
@@ -60,7 +61,7 @@ import stats.Summarizer;
  *   MultiMethodTest subclass). See also TestResult and MultiMethodTest.tRes
  *   documentation.
  *
- *   4. the before() and after() methods can be overriden to perform some
+ *   4. the before() and after() methods can be overridden to perform some
  *   actions, accordingly, before and after calling the test methods.
  *
  *   5. besides tRes, there are some fields initialized in the MultiMethodTest,
@@ -131,7 +132,7 @@ public class MultiMethodTest
      * Runs the interface test: its method tests. First, it initializes some
      * of MultiMethodTest fields, like tRes, log, tEnv, etc. Then, it queries
      * the tested interface and initializes 'oObj' field (defined in a
-     * subclass). Before calling method tests, before() method calles to allow
+     * subclass). Before calling method tests, before() method calls to allow
      * initialization of s stuff before testing. Then, the method tests are
      * called. After them, after() method is called, to allow cleaning up the
      * stuff initialized in before() and test methods.
@@ -187,7 +188,7 @@ public class MultiMethodTest
             }
             System.out.println(" is iface: [" + testedClassName + "] testcode: [" + entry.entryName + "]");
 
-            // quering the tested interface from the tested object
+            // querying the tested interface from the tested object
             XInterface tCase = tEnv.getTestObject();
             Object oObj = UnoRuntime.queryInterface(testedClass, tEnv.getTestObject());
 

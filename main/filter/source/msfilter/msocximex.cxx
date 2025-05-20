@@ -24,7 +24,6 @@
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_filter.hxx"
 
-/* -*- Mode: C; tab-width: 4; indent-tabs-mode: nil -*- */
 #include <com/sun/star/uno/Any.h>
 #include <com/sun/star/text/VertOrientation.hpp>
 #include <com/sun/star/text/XText.hpp>
@@ -116,7 +115,7 @@ long ReadAlign(SvStorageStream *pS, long nPos, int nAmount)
 // or embedded in the document.
 
 // [out]location     path to the stream to where the image is to be stored,
-//               if same name exists in folder then this function calcuates a new name
+//               if same name exists in folder then this function calculates a new name
 // [in] data     raw bytes of image to be stored.
 // [in] dataLen  no. byte to be stored
 //
@@ -3696,7 +3695,7 @@ void OCX_MultiPage::ProcessControl(OCX_Control* pControl, SvStorageStream* /* pS
         pPage->mnLeft = mnLeft;
         pPage->mnBackColor = mnBackColor;
 
-        oStream = pPage->getContainerStream();;
+        oStream = pPage->getContainerStream();
         // Position of controls is relative to pos of this MuliPage
         // Control
         pPage->FullRead( oStream );

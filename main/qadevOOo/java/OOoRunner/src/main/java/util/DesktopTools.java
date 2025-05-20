@@ -273,7 +273,7 @@ public class DesktopTools
         }
         catch (com.sun.star.uno.Exception e)
         {
-            throw new IllegalArgumentException("Document could not be loaded");
+            throw new IllegalArgumentException("Document could not be loaded" + (e.getMessage() != null ? (": " + e.getMessage()) : ""));
         }
 
         bringWindowToFront(oDoc);
@@ -454,7 +454,7 @@ public class DesktopTools
             aConfig.insertOrUpdateExtensibleGroupProperty(
                     "Windows", "5539", "UserData", "Data", "V2,V,0,AL:(5,16,0/0/244/349,244;610)");
 
-            // Is node "SplitWindow2" available? If not, instert it.
+            // Is node "SplitWindow2" available? If not, insert it.
             aConfig.getOrInsertGroup("Windows", "SplitWindow2");
 
             aConfig.insertOrUpdateExtensibleGroupProperty(

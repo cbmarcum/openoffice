@@ -28,7 +28,7 @@ import com.sun.star.uno.Type;
 import com.sun.star.uno.ITypeDescription;
 
 
-class TestMessage implements IMessage {
+class TestMessage {
 	boolean  _synchron;
 	ITypeDescription     _iTypeDescription;
 	String   _oid;
@@ -81,5 +81,3 @@ class TestMessage implements IMessage {
 //  			return new Integer(_requestId);
 	}
 }
-
-

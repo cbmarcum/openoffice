@@ -50,7 +50,7 @@ namespace xmloff
 	//=====================================================================
 	//= OFormLayerXMLExport
 	//=====================================================================
-	/** provides functionallity for exporting a complete form layer.
+	/** provides functionality for exporting a complete form layer.
 	*/
 	class XMLOFF_DLLPUBLIC OFormLayerXMLExport
 				:public ::vos::OReference
@@ -202,4 +202,3 @@ namespace xmloff
 //.........................................................................
 
 #endif // _XMLOFF_FORMLAYEREXPORT_HXX_
-

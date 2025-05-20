@@ -47,7 +47,7 @@ import com.sun.star.util.URL;
 *  <li><code> endRecording() </code></li>
 *  <li><code> getRecordedMacro() </code></li>
 * </ul><p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.frame.XDispatchRecorder
 */
 public class _XDispatchRecorder extends MultiMethodTest {
@@ -78,7 +78,7 @@ public class _XDispatchRecorder extends MultiMethodTest {
         
         oObj.startRecording(xFrame);
         
-        log.println("dispatch calles via API must be recorded");
+        log.println("dispatch calls via API must be recorded");
         dispURL = utils.parseURL((XMultiServiceFactory)tParam.getMSF(), ".uno:InsertText");
 
         PropertyValue prop = new PropertyValue();
@@ -129,7 +129,7 @@ public class _XDispatchRecorder extends MultiMethodTest {
         
         oObj.startRecording(xFrame);
 
-        // positve test 
+        // positive test
         dispURL = utils.parseURL((XMultiServiceFactory)tParam.getMSF(), ".uno:InsertText");
 
         PropertyValue prop = new PropertyValue();

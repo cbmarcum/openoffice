@@ -1030,7 +1030,7 @@ public sealed class Test
             l.assure(false);
         }
 
-        /** Case context fails to provide sigleton, a DeploymentException should be thrown.
+        /** Case context fails to provide singleton, a DeploymentException should be thrown.
          */
         c = new Context(Context.test_kind.CREATION_FAILED);
         try {
@@ -1282,7 +1282,7 @@ public sealed class Test
             l.assure(aXComponent == outXComponent);
             l.assure(aSeqBool == outSeqBool);
 
-            bool inoutBool = false;;
+            bool inoutBool = false;
             byte inoutByte = 10;
             short inoutShort = 11;
             ushort inoutUShort = 12;

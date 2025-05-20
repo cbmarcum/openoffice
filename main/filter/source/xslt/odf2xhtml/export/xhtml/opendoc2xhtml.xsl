@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <!--***********************************************************
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -19,7 +20,6 @@
  * under the License.
  *
  ***********************************************************-->
-
 
 <!--
 	For further documentation and updates visit https://xml.openoffice.org/odf2xhtml
@@ -95,7 +95,7 @@
 	<xsl:param name="targetURL" select="'./'" />
 
 	<!-- OPTIONAL: (MANDATORY: for input document with relative internal links)
-		 To access contents of a office file (content like the meta.xml, styles.xml file or  graphics) a URL could be chosen.
+		 To access contents of a office file (content like the meta.xml, styles.xml file or graphics) a URL could be chosen.
 	 This could be even a JAR URL. The sourceBase of the content URL "jar:file:/C:/temp/Test.sxw!/content.xml" would be
 	 "jar:file:/C:/temp/Test.sxw!/" for example.
 		 When working with OpenOffice API a Package-URL encoded over HTTP can be used to access the jared contents of the jared document. -->
@@ -129,16 +129,16 @@
 	<xsl:param name="onlyStyleOutput"          select="false()" />
 	<xsl:param name="onlyStyleOutputEnabled"   select="boolean($onlyStyleOutput)" />
 
-	<!-- ************************************* -->
-	<!-- *** build the propriate HTML file *** -->
-	<!-- ************************************* -->
+	<!-- *************************************** -->
+	<!-- *** build the appropriate HTML file *** -->
+	<!-- *************************************** -->
 	<xsl:template match="/">
 		<!-- debug output of parameter value set -->
 		<xsl:if test="$debugEnabled">
-			<xsl:call-template name="debug-check-paramter" />
+			<xsl:call-template name="debug-check-parameter" />
 		</xsl:if>
 		<!-- gathers style properties and
-			returns them as globalData parameter to the 'start-main' template            -->
+			returns them as globalData parameter to the 'start-main' template -->
 		<xsl:call-template name="collect-global-odf-properties" />
 	</xsl:template>
 
@@ -164,7 +164,7 @@
 
 	<!-- debug purpose only:
 		 verbose checking of the parameters of this template-->
-	<xsl:template name="debug-check-paramter">
+	<xsl:template name="debug-check-parameter">
 		<xsl:message>Parameter dpi: <xsl:value-of select="$dpi" /></xsl:message>
 		<xsl:message>Parameter metaFileURL: <xsl:value-of select="$metaFileURL" /></xsl:message>
 		<xsl:message>Parameter stylesFileURL: <xsl:value-of select="$stylesFileURL" /></xsl:message>

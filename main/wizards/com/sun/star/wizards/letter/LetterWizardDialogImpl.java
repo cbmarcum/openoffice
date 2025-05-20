@@ -141,7 +141,7 @@ public class LetterWizardDialogImpl extends LetterWizardDialog
             //Number of steps on WizardDialog:
             setMaxStep(6);
 
-            //instatiate The Document Frame for the Preview
+            //instantiate The Document Frame for the Preview
             myLetterDoc = new LetterDocument(xMSF, this);
 
             //create the dialog:
@@ -218,7 +218,7 @@ public class LetterWizardDialogImpl extends LetterWizardDialog
             //If the configuration does not define Greeting/Salutation yet choose a default
             setDefaultForGreetingAndSalutation();
 
-            //disable funtionality that is not supported by the template:
+            //disable functionality that is not supported by the template:
             initializeElements();
 
             //disable the document, so that the user cannot change anything:

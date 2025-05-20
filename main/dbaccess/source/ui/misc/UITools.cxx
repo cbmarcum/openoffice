@@ -486,7 +486,7 @@ void showError(const SQLExceptionInfo& _rInfo,Window* _pParent,const Reference< 
 ::std::vector< Reference<XNameAccess> > getKeyColumns(const Reference<XIndexAccess >& _rxKeys,
 													  sal_Int32 _nKeyType)
 {
-	// use keys and indexes for excat postioning
+	// use keys and indexes for exact positioning
 	// first the keys
 	::std::vector< Reference<XNameAccess> > vRet;
 	if(_rxKeys.is())
@@ -1491,7 +1491,7 @@ namespace
 		return bRet;
 	}
 // .........................................................................
-} // annonymous
+} // anonymous
 // .........................................................................
 // -----------------------------------------------------------------------------
 ::com::sun::star::util::URL	createHelpAgentURL(const ::rtl::OUString& _sModuleName, const rtl::OString& sHelpId)
@@ -1562,7 +1562,7 @@ TOTypeInfoSP queryPrimaryKeyType(const OTypeInfoMap& _rTypeInfo)
 	if ( !pTypeInfo.get() ) // just a fallback
 		pTypeInfo = queryTypeInfoByType(DataType::VARCHAR,_rTypeInfo);
 
-	OSL_ENSURE(pTypeInfo.get(),"checkColumns: cann't find a type which is useable as a key!");
+	OSL_ENSURE(pTypeInfo.get(),"checkColumns: can't find a type which is useable as a key!");
 	return pTypeInfo;
 }
 // -----------------------------------------------------------------------------

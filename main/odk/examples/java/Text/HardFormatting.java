@@ -38,7 +38,7 @@ public class HardFormatting {
     public static void main(String args[]) {
         // You need the desktop to create a document
         // The getDesktop method does the UNO bootstrapping, gets the
-        // remote servie manager and the desktop object.
+        // remote service manager and the desktop object.
         com.sun.star.frame.XDesktop xDesktop = null;
         xDesktop = getDesktop();
         
@@ -54,7 +54,7 @@ public class HardFormatting {
             
             String sMyText = "A very short paragraph for illustration only";
             
-            // you can travel with the cursor throught the text document.
+            // you can travel with the cursor through the text document.
             // you travel only at the model, not at the view. The cursor that you can
             // see on the document doesn't change the position
             com.sun.star.text.XTextCursor xTextCursor = null;
@@ -70,14 +70,14 @@ public class HardFormatting {
             com.sun.star.text.XTextRange xTextRange = null;
             com.sun.star.beans.XPropertySet xPropertySet = null;
             
-            // BEGIN: 'Hard formating'            
+            // BEGIN: 'Hard formatting'
             // the text range not the cursor contains the 'parastyle' property
             xTextRange = xText.getEnd();
             xPropertySet = (com.sun.star.beans.XPropertySet)
                 UnoRuntime.queryInterface(
                     com.sun.star.beans.XPropertySet.class, xTextRange);
             
-            // create a paragraph cursor to travel throught the paragraphs
+            // create a paragraph cursor to travel through the paragraphs
             com.sun.star.text.XParagraphCursor xParagraphCursor = null;
             xParagraphCursor = (com.sun.star.text.XParagraphCursor)
                 UnoRuntime.queryInterface(
@@ -124,7 +124,7 @@ public class HardFormatting {
                 + xPropertySet.getPropertyValue("CharWeight").toString() );
             
             // the PropertyState contains information where the attribute is set,
-            // is a text part hard formated or not.
+            // is a text part hard formatted or not.
             com.sun.star.beans.XPropertyState xPropertyState = null;
             xPropertyState = (com.sun.star.beans.XPropertyState)
                 UnoRuntime.queryInterface(
@@ -147,7 +147,7 @@ public class HardFormatting {
             xPropertyStateValue = xPropertyState.getPropertyState("CharWeight");
             checkPropertyState(xWordCursor, xPropertyStateValue);
             
-            // END: 'Hard formating' Section from the Cookbook
+            // END: 'Hard formatting' Section from the Cookbook
         }
         catch( Exception e) {
             e.printStackTrace(System.err);
@@ -170,21 +170,21 @@ public class HardFormatting {
             case com.sun.star.beans.PropertyState.DIRECT_VALUE_value:  {
                 System.out.println( "-> The selection '"
                                     + xWordCursor.getString()
-                                    + "' completly hard formated" );
+                                    + "' completely hard formatted" );
                 break;
             }
             
             case com.sun.star.beans.PropertyState.DEFAULT_VALUE_value: {
                 System.out.println( "-> The selection '"
                                     + xWordCursor.getString()
-                                    + "' isn't hard formated" );
+                                    + "' isn't hard formatted" );
                 break;
             }
             
             case com.sun.star.beans.PropertyState.AMBIGUOUS_VALUE_value: {
                 System.out.println( "-> The selection '"
                                     + xWordCursor.getString()
-                                    + "' isn't completly hard formated" );
+                                    + "' isn't completely hard formatted" );
                 break;
             }
             

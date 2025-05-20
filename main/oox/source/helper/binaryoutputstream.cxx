@@ -58,6 +58,18 @@ BinaryXOutputStream::~BinaryXOutputStream()
     close();
 }
 
+void BinaryXOutputStream::flush()
+{
+    if( mxOutStrm.is() ) try
+    {
+        mxOutStrm->flush();
+    }
+    catch( Exception& )
+    {
+        OSL_ENSURE( false, "BinaryXOutputStream::flush - flushing stream failed" );
+    }
+}
+
 void BinaryXOutputStream::close()
 {
     OSL_ENSURE( !mbAutoClose || mxOutStrm.is(), "BinaryXOutputStream::close - invalid call" );
@@ -134,4 +146,3 @@ void SequenceOutputStream::writeMemory( const void* pMem, sal_Int32 nBytes, size
 // ============================================================================
 
 } // namespace oox
-

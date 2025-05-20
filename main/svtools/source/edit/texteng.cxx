@@ -3221,7 +3221,7 @@ long TextEngine::ImpGetPortionXOffset( sal_uLong nPara, TextLine* pLine, sal_uIn
 /*
     if ( IsRightToLeft() )
     {
-        // Switch X postions...
+        // Switch X positions...
         DBG_ASSERT( GetMaxTextWidth(), "GetPortionXOffset - max text width?!" );
         DBG_ASSERT( nX <= (long)GetMaxTextWidth(), "GetPortionXOffset - position out of paper size!" );
         nX = GetMaxTextWidth() - nX;
@@ -3270,7 +3270,7 @@ long TextEngine::ImpGetOutputOffset( sal_uLong nPara, TextLine* pLine, sal_uInt1
     if ( ( nIndex == nPortionStart ) && ( nIndex == nIndex2 )  )
     {
         // Output of full portion, so we need portion x offset.
-        // Use ImpGetPortionXOffset, because GetXPos may deliver left or right position from portioon, depending on R2L, L2R
+        // Use ImpGetPortionXOffset, because GetXPos may deliver left or right position from portion, depending on R2L, L2R
         nX = ImpGetPortionXOffset( nPara, pLine, nPortion );
         if ( IsRightToLeft() )
         {

@@ -560,7 +560,7 @@ void FileDialogHelper_Impl::enablePasswordBox( sal_Bool bInit )
 
 	if( bInit )
 	{
-		// in case of inintialization previous state is not interesting
+		// in case of initialization previous state is not interesting
 		if( mbIsPwdEnabled )
 		{
 			uno::Reference< XFilePickerControlAccess > xCtrlAccess( mxFileDlg, UNO_QUERY );
@@ -849,7 +849,7 @@ ErrCode FileDialogHelper_Impl::getGraphic( Graphic& rGraphic ) const
 
 	if ( ! maGraphic )
 	{
-		OUString aPath;;
+		OUString aPath;
 		Sequence < OUString > aPathSeq = mxFileDlg->getFiles();
 
 		if ( aPathSeq.getLength() == 1 )
@@ -2910,4 +2910,3 @@ String DecodeSpaces_Impl( const String& rSource )
 // ------------------------------------------------------------------------
 
 }	// end of namespace sfx2
-

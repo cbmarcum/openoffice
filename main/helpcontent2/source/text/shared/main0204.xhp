@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<helpdocument version="1.0">
 
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,21 +9,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
-
-
-
+<helpdocument version="1.0">
 <meta>
 <topic id="textsharedmain0204xml" indexer="include">
 <title id="tit" xml-lang="en-US">Table Bar</title>
@@ -47,7 +44,7 @@
 <embed href="text/shared/02/03130000.xhp#syumrandung"/>
 <paragraph role="heading" id="hd_id319945759" xml-lang="en-US" level="2" l10n="NEW"><link href="text/shared/01/05210100.xhp" name="Area Style / Filling">Area Style / Filling</link></paragraph>
 <embed href="text/shared/01/05210100.xhp#sytext"/>
-<paragraph role="heading" id="hd_id3147592" xml-lang="en-US" level="2" l10n="U" oldref="6"><link href="text/shared/01/05100100.xhp" name="Merge Cells">Merge Cells</link></paragraph>
+<paragraph role="heading" id="hd_id3147592" xml-lang="en-US" level="2" l10n="U"><link href="text/shared/01/05100100.xhp" name="Merge Cells">Merge Cells</link></paragraph>
 <embed href="text/shared/01/05100100.xhp#verbindentext"/>
 <embed href="text/shared/01/05100100.xhp#syzellenverbinden"/>
 <embed href="text/shared/01/05100200.xhp#zellenteilen"/>
@@ -61,18 +58,17 @@
 <embed href="text/swriter/02/04090000.xhp#syzeileeinfuegen"/>
 <embed href="text/swriter/02/04100000.xhp#spalteeinfuegen"/>
 <embed href="text/swriter/02/04100000.xhp#syspalteeinfuegen"/>
-<paragraph role="heading" id="hd_id3147820" xml-lang="en-US" level="2" l10n="U" oldref="9"><link href="text/swriter/01/05110500.xhp" name="Delete Row">Delete Row</link></paragraph>
+<paragraph role="heading" id="hd_id3147820" xml-lang="en-US" level="2" l10n="U"><link href="text/swriter/01/05110500.xhp" name="Delete Row">Delete Row</link></paragraph>
 <embed href="text/swriter/01/05110500.xhp#loeschentext"/>
 <embed href="text/swriter/00/00000405.xhp#syzeileloeschen"/>
-<paragraph role="heading" id="hd_id3147231" xml-lang="en-US" level="2" l10n="U" oldref="10"><link href="text/swriter/01/05120500.xhp" name="Delete Column">Delete Column</link></paragraph>
+<paragraph role="heading" id="hd_id3147231" xml-lang="en-US" level="2" l10n="U"><link href="text/swriter/01/05120500.xhp" name="Delete Column">Delete Column</link></paragraph>
 <embed href="text/swriter/01/05120500.xhp#loeschentext"/>
 <embed href="text/swriter/00/00000405.xhp#syspalteloeschen"/>
 <comment>following only optional, ext.help is available: Select Table Select Column Select Row</comment>
-<paragraph role="heading" id="hd_id3134447820" xml-lang="en-US" level="2" l10n="NEW"><link href="text/simpress/01/taskpanel.xhp" name="Table Design">Table Design</link></paragraph>
-<paragraph role="paragraph" id="par_id16200812240344" xml-lang="en-US" l10n="NEW">Opens the Table Design. Double-click a preview to insert a new table.<comment>Impress: Table Design tab page in task pane.
+<paragraph role="heading" id="hd_id3134447820" xml-lang="en-US" level="2" l10n="NEW"><link href="text/simpress/01/sidebar.xhp" name="Table Design">Table Design</link></paragraph>
+<paragraph role="paragraph" id="par_id16200812240344" xml-lang="en-US" l10n="NEW">Opens the Table Design. Double-click a preview to insert a new table.<comment>Impress: Table Design tab page in Sidebar.
 Draw: Table Design dialog</comment></paragraph>
 <paragraph role="heading" id="hd_id947820" xml-lang="en-US" level="2" l10n="NEW"><link href="text/simpress/01/05090000m.xhp" name="Table Properties">Table Properties</link></paragraph>
 <embed href="text/simpress/01/05090000m.xhp#tabelletext"/>
-
 </body>
 </helpdocument>

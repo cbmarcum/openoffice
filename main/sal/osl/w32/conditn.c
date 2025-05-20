@@ -95,7 +95,7 @@ oslConditionResult SAL_CALL osl_waitCondition(oslCondition Condition,
 		timeout = INFINITE;
 
 	/* It's necessary to process SendMessage calls to the current thread to give other threads
-		access to COM objects instatiated in this thread */
+		access to COM objects instantiated in this thread */
 
 	while ( 1 )
 	{
@@ -134,4 +134,3 @@ sal_Bool SAL_CALL osl_checkCondition(oslCondition Condition)
 
 	return (sal_Bool)(WaitForSingleObject((HANDLE)Condition, 0) == WAIT_OBJECT_0);
 }
-

@@ -352,7 +352,7 @@ void SwSrcView::Execute(SfxRequest& rReq)
 //			pFileDlg->SetHelpId(HID_FILEDLG_SRCVIEW);
             uno::Reference<XFilterManager> xFltMgr(xFP, UNO_QUERY);
 
-			// search for an html filter for export
+			// search for an HTML filter for export
 			SfxFilterContainer* pFilterCont = GetObjectShell()->GetFactory().GetFilterContainer();
 			const SfxFilter* pFilter =
 				pFilterCont->GetFilter4Extension( C2S("html"), SFX_FILTER_EXPORT );
@@ -552,7 +552,7 @@ void SwSrcView::GetState(SfxItemSet& rSet)
 					nCount = rMgr.GetUndoActionCount();
 					if(nCount)
 					{
-						String aStr(SvtResId( STR_UNDO));;
+						String aStr(SvtResId( STR_UNDO));
 						aStr += rMgr.GetUndoActionComment(--nCount);
 						rSet.Put(SfxStringItem(nWhich, aStr));
 					}
@@ -564,7 +564,7 @@ void SwSrcView::GetState(SfxItemSet& rSet)
 					nCount = rMgr.GetRedoActionCount();
 					if(nCount)
 					{
-						String aStr(SvtResId( STR_REDO));;
+						String aStr(SvtResId( STR_REDO));
 						aStr += rMgr.GetRedoActionComment(--nCount);
 						rSet.Put(SfxStringItem(nWhich,aStr));
 					}
@@ -947,5 +947,3 @@ void SwSrcView::Load(SwDocShell* pDocShell)
 	aEditWin.GetTextEngine()->ResetUndo();
 	aEditWin.GetOutWin()->GrabFocus();
 }
-
-

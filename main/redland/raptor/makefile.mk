@@ -94,6 +94,7 @@ BUILD_DIR=$(CONFIGURE_DIR)$/src
 
 .ELSE # "WNT"
 
+OOO_PATCH_FILES+=$(TARFILE_NAME).patch
 .IF "$(OS)$(COM)"=="LINUXGCC" || "$(OS)$(COM)"=="FREEBSDGCC"
 LDFLAGS:=-Wl,-rpath,'$$$$ORIGIN:$$$$ORIGIN/../ure-link/lib' -Wl,-noinhibit-exec
 .ENDIF                  # "$(OS)$(COM)"=="LINUXGCC"
@@ -172,4 +173,3 @@ OUT2LIB+=src$/.libs$/libraptor2.so.$(RAPTOR_MAJOR) src$/.libs$/libraptor2.so
 .INCLUDE : set_ext.mk
 .INCLUDE : target.mk
 .INCLUDE : tg_ext.mk
-

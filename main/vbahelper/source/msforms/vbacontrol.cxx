@@ -86,7 +86,7 @@ ScVbaControl::getWindowPeer() throw (uno::RuntimeException)
     }
     catch( uno::Exception )
     {
-        throw uno::RuntimeException( rtl::OUString::createFromAscii( "The Control does not exsit" ),
+        throw uno::RuntimeException( rtl::OUString::createFromAscii( "The Control does not exist" ),
                 uno::Reference< uno::XInterface >() );
     }
     return xWinPeer;
@@ -542,5 +542,3 @@ extern sdecl::ServiceDecl const serviceDecl(
     "ControlProviderImpl",
     "ooo.vba.ControlProvider" );
 }
-
-

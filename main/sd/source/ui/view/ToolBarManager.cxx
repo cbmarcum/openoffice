@@ -143,7 +143,7 @@ public:
     */
     void ClearGroup (sd::ToolBarManager::ToolBarGroup eGroup);
 
-    /** Add a shell.  When the specified shell has alreadt been requested
+    /** Add a shell.  When the specified shell has already been requested
         for another group then it is moved to this group.
         @param eGroup
             The group to which to add the shell.
@@ -153,7 +153,7 @@ public:
     void AddShellId (sd::ToolBarManager::ToolBarGroup eGroup, sd::ShellId nId);
 
     /** Releasing all shells means that the given ToolBarRules object is
-        informed that every shell mananged by the called ToolBarShellList is
+        informed that every shell managed by the called ToolBarShellList is
         about to be removed and that the associated framework tool bars can
         be removed as well.  The caller still has to call UpdateShells().
     */
@@ -283,7 +283,7 @@ public:
     /** Release all tool bar shells and the associated framework tool bars.
         Typically called when the main view shell is being replaced by
         another, all tool bar shells are released.  In that process the
-        shells are destroyed anyway and whithout calling this method they
+        shells are destroyed anyway and without calling this method they
         would still be referenced.
     */
     void ReleaseAllToolBarShells (void);

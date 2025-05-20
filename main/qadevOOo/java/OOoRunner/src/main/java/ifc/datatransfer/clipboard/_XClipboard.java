@@ -39,7 +39,7 @@ import com.sun.star.datatransfer.clipboard.XClipboardOwner;
 *  <li><code> setContents()</code></li>
 *  <li><code> getName()</code></li>
 * </ul> <p>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * @see com.sun.star.datatransfer.clipboard.XClipboard
 */
 public class _XClipboard extends MultiMethodTest {
@@ -112,7 +112,7 @@ public class _XClipboard extends MultiMethodTest {
 
     /**
     * Sets new contents for the clipboard. Then checks if it was set,
-    * and if <code>lostOwnerShip()</code> notification of the prevoius
+    * and if <code>lostOwnerShip()</code> notification of the previous
     * contents was called with appropriate parameters.<p>
     * Has <b> OK </b> status if <code>getContents</code> returns the same
     * object which is set, and notification was received.

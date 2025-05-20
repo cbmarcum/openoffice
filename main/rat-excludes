@@ -82,11 +82,21 @@ main/testautomation/framework/optional/input/options/paths_1.txt
 main/testautomation/global/input/filters/graphic_filters.txt
 main/desktop/test/deployment/update/publisher/release-notes_de-DE.html
 main/swext/mediawiki/help/component.txt
+main/helpauthoring/pkg-desc/pkg-description.en-US
 
 ##############################################################################
 #
 # Single files to exclude
 #
+
+# GitHub Readme
+README.md
+main/sc/README.md
+main/sd/README.md
+main/starmath/README.md
+main/sw/README.md
+main/swext/README.md
+test/README.md
 
 # own license files
 main/LICENSE_category_b
@@ -1249,7 +1259,10 @@ main/extensions/source/macosx/spotlight/mdimporter/en.lproj/schema.strings
 
 main/desktop/test/deployment/update/defect/update/info1.update.xml
 main/desktop/test/deployment/update/defect/update/info2.update.xml
-
+test/smoketestdoc/manifest.empty
+test/testuno/data/uno/sc/fvt/Bug100989MergeAcross0AddsExtraEmptyCell.xml
+test/testuno/data/uno/sc/fvt/Bug128554FractionalSecondsIgnored.xml
+test/testuno/data/uno/sc/fvt/Bug81233ColumnZReference.xml
 
 ##############################################################################
 #

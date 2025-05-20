@@ -22,7 +22,6 @@
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
 
-/* -*- Mode: C; tab-width: 4; indent-tabs-mode: nil -*- */
 #include <svl/urihelper.hxx>
 #include <hintids.hxx>
 #include <osl/endian.h>
@@ -2041,7 +2040,7 @@ void SwWW8ImplReader::MapWrapIntoFlyFmt(SvxMSDffImportRec* pRecord,
              Gather round children and hear of a tale that will raise the
              hairs on the back of your neck this dark halloween night.
 
-             There is a polygon in word that describes the wraping around
+             There is a polygon in word that describes the wrapping around
              the graphic.
 
              Here are some sample values for the simplest case of a square

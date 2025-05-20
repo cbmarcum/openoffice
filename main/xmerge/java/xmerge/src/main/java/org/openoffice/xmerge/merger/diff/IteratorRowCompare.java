@@ -72,7 +72,7 @@ public class IteratorRowCompare implements DiffAlgorithm {
      *
      *  @param  orgSeq  The original sequence.
      *  @param  modSeq  The modified (or changed) sequence to
-     * 			       compare against with the origial.
+     * 			       compare against with the original.
      *
      *  @return  An array of Difference objects.
      */
@@ -236,4 +236,3 @@ public class IteratorRowCompare implements DiffAlgorithm {
         return splitRow;
     }
 }
-

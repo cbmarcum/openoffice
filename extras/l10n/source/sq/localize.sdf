@@ -25799,8 +25799,8 @@ scp2	source\calc\module_calc.ulf	0	LngText	STR_NAME_MODULE_OPTIONAL_ADDINS				0	
 scp2	source\calc\folderitem_calc.ulf	0	LngText	STR_FI_NAME_TABELLENDOKUMENT				0	sq	Tabelë kalkuluese				2002-02-02 02:02:02
 scp2	source\calc\folderitem_calc.ulf	0	LngText	STR_FI_TOOLTIP_CALC				0	sq	Kryen kalkulimin, analizon informacionet dhe menaxhon listën në tabelën kalkuluese duke shfrytëzuar Kalk				2002-02-02 02:02:02
 scp2	source\calc\registryitem_calc.ulf	0	LngText	STR_REG_VAL_NEW				0	sq	&e Re				2002-02-02 02:02:02
-scp2	source\calc\registryitem_calc.ulf	0	LngText	STR_REG_VAL_SO60_SPREADSHEET				0	sq	%PRODUCTNAME %SXWFORMATVERSION Tabelë kalkuluese				2002-02-02 02:02:02
-scp2	source\calc\registryitem_calc.ulf	0	LngText	STR_REG_VAL_SO60_CALC_TEMPLATE				0	sq	%productname% %formatversion% Shabllon i Tabelës kalkuluese				2002-02-02 02:02:02
+scp2	source\calc\registryitem_calc.ulf	0	LngText	STR_REG_VAL_SO60_SPREADSHEET				0	sq	%SXWFORMATNAME %SXWFORMATVERSION Tabelë kalkuluese				2002-02-02 02:02:02
+scp2	source\calc\registryitem_calc.ulf	0	LngText	STR_REG_VAL_SO60_CALC_TEMPLATE				0	sq	%SXWFORMATNAME %SXWFORMATVERSION Shabllon i Tabelës kalkuluese				2002-02-02 02:02:02
 scp2	source\calc\registryitem_calc.ulf	0	LngText	STR_REG_VAL_OO_CALC				0	sq	Tabelar OpenDokument				2002-02-02 02:02:02
 scp2	source\calc\registryitem_calc.ulf	0	LngText	STR_REG_VAL_OO_CALC_TEMPLATE				0	sq	Shabllon tabelar OpenDokument				2002-02-02 02:02:02
 scp2	source\calc\registryitem_calc.ulf	0	LngText	STR_REG_VAL_MS_EXCEL_WORKSHEET_OLD				0	sq	Biff8 (Microsoft Excel 97/2000/XP)				2002-02-02 02:02:02

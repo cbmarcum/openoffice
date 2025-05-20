@@ -81,7 +81,7 @@ int SAL_CALL main( int argc, char **argv )
 	PR_Init( PR_SYSTEM_THREAD, PR_PRIORITY_NORMAL, 1 ) ;
 	PK11_SetPasswordFunc( PriPK11PasswordFunc ) ;
 	if( NSS_Init( argv[1] ) != SECSuccess ) {
-		fprintf( stderr , "### cannot intialize NSS!\n" ) ;
+		fprintf( stderr , "### cannot initialize NSS!\n" ) ;
 		goto done ;
 	}
 
@@ -137,7 +137,7 @@ int SAL_CALL main( int argc, char **argv )
 		Sequence < Reference< XCertificate > > xPersonalCerts = pSecEnv->getPersonalCertificates() ;
 		Sequence < Reference< XCertificate > > xCertPath ;
 		for( int i = 0; i < xPersonalCerts.getLength(); i ++ ) {
-			//Print the certificate infomation.
+			//Print the certificate information.
 			fprintf( stdout, "\nPersonal Certificate Info\n" ) ;
 			fprintf( stdout, "\tCertificate Issuer[%s]\n", OUStringToOString( xPersonalCerts[i]->getIssuerName(), RTL_TEXTENCODING_ASCII_US ).getStr() ) ;
 			fprintf( stdout, "\tCertificate Serial Number[%s]\n", OUStringToOString( bigIntegerToNumericString( xPersonalCerts[i]->getSerialNumber() ), RTL_TEXTENCODING_ASCII_US ).getStr() ) ;
@@ -182,4 +182,3 @@ done:
 
 	return 0;
 }
-

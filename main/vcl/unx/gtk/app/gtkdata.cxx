@@ -678,7 +678,7 @@ void GtkXLib::Init()
 
 	/*
 	 * if a -display switch was used, we need
-	 * to set the environment accoringly since
+	 * to set the environment accordingly since
 	 * the clipboard build another connection
 	 * to the xserver using $DISPLAY
 	 */
@@ -845,7 +845,7 @@ void GtkXLib::Yield( bool bWait, bool bHandleAllCurrentEvents )
 {
     /* #i33212# only enter g_main_context_iteration in one thread at any one
      * time, else one of them potentially will never end as long as there is
-     * another thread in in there. Having only one yieldin thread actually dispatch
+     * another thread in in there. Having only one yielding thread actually dispatch
      * fits the vcl event model (see e.g. the generic plugin).
      */
     

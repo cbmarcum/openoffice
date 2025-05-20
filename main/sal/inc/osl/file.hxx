@@ -149,7 +149,7 @@ public:
 	    If ustrRelativeFileURL denotes an absolute path ustrBaseDirectoryURL will be ignored.
     	
 	    @param ustrAbsoluteFileURL [out]
-	    On success it receives the full qualified absoulte file URL.
+	    On success it receives the full qualified absolute file URL.
 
 	    @return 
 	    E_None on success 
@@ -467,7 +467,7 @@ class VolumeInfo
 
 	VolumeInfo( VolumeInfo& );
 	
-	/** Assginment operator.
+	/** Assignment operator.
 	*/
 	
 	VolumeInfo& operator = ( VolumeInfo& );
@@ -910,7 +910,7 @@ class File: public FileBase
 
 	File( File& );
 	
-	/** Assginment operator.
+	/** Assignment operator.
 	*/
 	
 	File& operator = ( File& );
@@ -940,7 +940,7 @@ public:
 
 	/** Open a regular file.
 
-        Open a file. Only regular files	can be openend.
+        Open a file. Only regular files	can be opened.
         	        	
 	    @param uFlags [in]
 	    Specifies the open mode.
@@ -1947,4 +1947,3 @@ public:
 
 #endif  /* __cplusplus */
 #endif	/* _OSL_FILE_HXX_ */
-

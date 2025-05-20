@@ -67405,7 +67405,7 @@ svx	source\svdraw\svdstr.src	0	string	STR_DragMethShear				0	kid	y+mimf‖Distor
 svx	source\svdraw\svdstr.src	0	string	STR_DragMethCrook				0	kid	i0g+mu‖Arrange %1 in circle				20130829 23:02:48
 svx	source\svdraw\svdstr.src	0	string	STR_DragMethCrookContortion				0	kid	lqajk7‖Curve %1 in circle				20130829 23:02:48
 svx	source\svdraw\svdstr.src	0	string	STR_DragMethDistort				0	kid	+2mzqe‖Distort %1				20130829 23:02:48
-svx	source\svdraw\svdstr.src	0	string	STR_DragMethCrop				0	kid	+6h1zx‖Crop %O				20130829 23:02:48
+svx	source\svdraw\svdstr.src	0	string	STR_DragMethCrop				0	kid	+6h1zx‖Crop %1				20130829 23:02:48
 svx	source\svdraw\svdstr.src	0	string	STR_DragRectEckRad				0	kid	8lw+3w‖Alter radius by %1				20130829 23:02:48
 svx	source\svdraw\svdstr.src	0	string	STR_DragPathObj				0	kid	vtrk+6‖Change %1				20130829 23:02:48
 svx	source\svdraw\svdstr.src	0	string	STR_DragRectResize				0	kid	nduc=t‖Resize %1				20130829 23:02:48

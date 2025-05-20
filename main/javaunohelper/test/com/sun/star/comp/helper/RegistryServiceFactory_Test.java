@@ -60,7 +60,7 @@ public class RegistryServiceFactory_Test {
 			System.out.println("Available services are:");
 			System.err.println();
 			if (services.length == 0)
-				System.out.println("No services avialable!");
+				System.out.println("No services available!");
 
 			else 			
 				for ( int i=0; i<services.length; i++ )
@@ -93,4 +93,3 @@ public class RegistryServiceFactory_Test {
 		System.exit( test(args[0]) == true ? 0: -1 );		
 	}
 }
-

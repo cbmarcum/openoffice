@@ -20,7 +20,6 @@
  *************************************************************/
 
 
-/* -*- Mode: C; tab-width: 4; indent-tabs-mode: nil -*- */
 
 #ifndef _WW8PAR_HXX
 #define _WW8PAR_HXX
@@ -987,7 +986,7 @@ private:
     as they are encountered, and so their end point is normally unimportant.
     But hyperlink fields need to be applied as attributes to text and it is
     far easier and safer to set the end point of an attribute when we
-    encounter the end marker of the field instead of caculating in advance
+    encounter the end marker of the field instead of calculating in advance
     where the end point will fall, to do so fully correctly duplicates the
     main logic of the filter itself.
     */
@@ -1640,7 +1639,7 @@ public:     // eigentlich private, geht aber leider nur public
     void Read_CFRMark(sal_uInt16 , const sal_uInt8* pData, short nLen);
     // delete old content
     void Read_CFRMarkDel(sal_uInt16 , const sal_uInt8* pData, short nLen);
-    // change properties of content (e.g. char formating)
+    // change properties of content (e.g. char formatting)
     void Read_CPropRMark(sal_uInt16 , const sal_uInt8* pData, short nLen); // complex!
 
 

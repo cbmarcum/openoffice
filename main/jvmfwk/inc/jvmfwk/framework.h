@@ -106,12 +106,12 @@ extern "C" {
     necessary to specify the bootstrap parameter <code>UNO_JAVA_JFW_SHARED_DATA</code>.
     </p>
 
-    <p>Setting the class path used by a Java VM should not be necesarry. The locations
+    <p>Setting the class path used by a Java VM should not be necessary. The locations
     of Jar files should be knows by a class loader. If a jar file depends on another
     jar file then it can be referenced in the manifest file of the first jar. However,
     a user may add jars to the class path by using this API. If it becomes necessary
     to add files to the class path which is to be used by all users then one can use
-    the bootrap parameter UNO_JAVA_JFW_CLASSPATH_URLS. The value contains of file URLs
+    the bootstrap parameter UNO_JAVA_JFW_CLASSPATH_URLS. The value contains of file URLs
     which must be separated by spaces.</p>
 
     
@@ -363,7 +363,7 @@ JVMFWK_DLLPUBLIC javaFrameworkError SAL_CALL jfw_isVMRunning(sal_Bool *bRunning)
     be put into the javavendors.xml file.<br/>
     The function uses the plug-in libraries to obtain information about JRE
     installation and checks if they there is one among them that supports
-    a set of features (currently only accessibilty is possible). If none was
+    a set of features (currently only accessibility is possible). If none was
     found then it also uses a list of paths, which have been registered
     by <code>jfw_addJRELocation</code> or <code>jfw_setJRELocations</code>
     to find JREs. Found JREs are examined in the same way.</p>

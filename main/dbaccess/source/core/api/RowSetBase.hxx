@@ -240,7 +240,7 @@ namespace dbaccess
 			@param	_aCheckFunctor
 				Return <TRUE/> when we already stand on the row we want to.
 			@param	_aMovementFunctor
-				The mehtod used to move.
+				The method used to move.
 			@return
 				<TRUE/> if movement was successful.
 		*/
@@ -457,4 +457,3 @@ namespace dbaccess
 } // end of namespace
 
 #endif // DBACCESS_CORE_API_ROWSETBASE_HXX
-

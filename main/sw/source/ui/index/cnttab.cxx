@@ -2794,7 +2794,7 @@ IMPL_LINK(SwTOXEntryTabPage, LevelHdl, SvTreeListBox*, pBox)
 
         // #i21237#
         SwFormTokens aPattern = m_pCurrentForm->GetPattern(nLevel + 1);
-        SwFormTokens::iterator aIt = aPattern.begin();;
+        SwFormTokens::iterator aIt = aPattern.begin();
 
 		while(aIt != aPattern.end())
 		{
@@ -3708,7 +3708,7 @@ void SwTokenWindow::AdjustScrolling()
 		{
 			if(pFirstCtrl)
 			{
-				//if the control fits into the space then the first control must be at postion 0
+				//if the control fits into the space then the first control must be at position 0
 				long nFirstPos = pFirstCtrl->GetPosPixel().X();
 				if(nFirstPos != 0)
 					MoveControls(-nFirstPos);
@@ -4683,4 +4683,3 @@ IMPL_LINK(SwAutoMarkDlg_Impl, OkHdl, OKButton*, EMPTYARG)
 		EndDialog(RET_OK);
 	return 0;
 }
-

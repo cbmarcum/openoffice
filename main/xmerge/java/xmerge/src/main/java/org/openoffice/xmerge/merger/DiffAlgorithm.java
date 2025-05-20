@@ -38,10 +38,9 @@ public interface DiffAlgorithm {
      *
      *  @param  orgSeq  The original sequence of object.
      *  @param  modSeq  The modified (or changed) sequence to
-     *                  compare against with the origial.
+     *                  compare against with the original.
      *
      *  @return  A <code>Difference</code> array.
      */
     public Difference[] computeDiffs(Iterator orgSeq, Iterator modSeq);
 }
-

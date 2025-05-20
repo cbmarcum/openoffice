@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -96,7 +96,6 @@ SwContentOptPage::SwContentOptPage( Window* pParent,
 	SfxTabPage( pParent, SW_RES( TP_CONTENT_OPT ), rCoreSet ),
     aLineFL       ( this,   SW_RES( FL_LINE     ) ),
 	aCrossCB   	  ( this,	SW_RES( CB_CROSS     ) ),
-	aSolidHandleCB( this, 	SW_RES( CB_HANDLE	) ),
 	aBigHandleCB  ( this, 	SW_RES( CB_BIGHANDLE) ),
 
     aWindowFL     ( this,   SW_RES( FL_WINDOW   ) ),
@@ -221,7 +220,6 @@ void SwContentOptPage::Reset(const SfxItemSet& rSet)
         aFldNameCB  .Check  (pElemAttr->bFieldName            );
         aPostItCB   .Check  (pElemAttr->bNotes                );
         aCrossCB   .Check( pElemAttr->bCrosshair        );
-        aSolidHandleCB.Check( !pElemAttr->bHandles          );
         aBigHandleCB.Check(pElemAttr->bBigHandles       );
         aHScrollBox.Check( pElemAttr->bHorzScrollbar     );
         aVScrollBox.Check( pElemAttr->bVertScrollbar     );
@@ -255,7 +253,6 @@ sal_Bool SwContentOptPage::FillItemSet(SfxItemSet& rSet)
     aElem.bFieldName            = aFldNameCB    .IsChecked();
     aElem.bNotes                = aPostItCB     .IsChecked();
     aElem.bCrosshair     = aCrossCB   .IsChecked();
-    aElem.bHandles       = !aSolidHandleCB.IsChecked();
     aElem.bBigHandles    = aBigHandleCB.IsChecked();
     aElem.bHorzScrollbar = aHScrollBox.IsChecked();
     aElem.bVertScrollbar = aVScrollBox.IsChecked();
@@ -399,7 +396,7 @@ SwAddPrinterTabPage::SwAddPrinterTabPage( Window* pParent,
 //        aPrintHiddenTextCB.SetPosPixel(aBlackFontCB.GetPosPixel());
 //		aBackgroundCB.SetPosPixel(aCtrlFldCB.GetPosPixel());
 //		aCtrlFldCB.SetPosPixel(aDrawCB.GetPosPixel());
-        
+
         // hide aPrintEmptyPagesCB and move everything below up accordingly
         long nDeltaY = aPaperFromSetupCB.GetPosPixel().getY() - aPrintEmptyPagesCB.GetPosPixel().getY();
         aPrintEmptyPagesCB.Hide();
@@ -922,7 +919,7 @@ void SwStdFontTabPage::Reset( const SfxItemSet& rSet)
     // #i94536# prevent duplication of font entries when 'reset' button is pressed
     if( !aStandardBox.GetEntryCount() )
     {
-        // get the set of disctinct available family names
+        // get the set of distinct available family names
         std::set< String > aFontNames;
         int nFontNames = pPrt->GetDevFontCount();
         for( int i = 0; i < nFontNames; i++ )
@@ -930,7 +927,7 @@ void SwStdFontTabPage::Reset( const SfxItemSet& rSet)
             FontInfo aInf( pPrt->GetDevFont( i ) );
             aFontNames.insert( aInf.GetName() );
         }
-        
+
         // insert to listboxes
         for( std::set< String >::const_iterator it = aFontNames.begin();
              it != aFontNames.end(); ++it )
@@ -1488,7 +1485,7 @@ void SwTableOptionsTabPage::PageCreated (SfxAllItemSet aSet)
 	if (pWrtSh)
 		SetWrtShell(pWrtSh->GetValue());
 }
-/*  */
+/* */
 
 /*-----------------31.10.97 17:55-------------------
  TabPage fuer ShadowCrsr
@@ -1960,7 +1957,7 @@ SwRedlineOptionsTabPage::SwRedlineOptionsTabPage( Window* pParent,
     aChangedLB.RemoveEntry(5);
     aDeletedLB.RemoveEntry(4);
     aDeletedLB.RemoveEntry(3);
-    
+
     Link aLk = LINK(this, SwRedlineOptionsTabPage, AttribHdl);
 	aInsertLB.SetSelectHdl( aLk );
 	aDeletedLB.SetSelectHdl( aLk );
@@ -2210,14 +2207,14 @@ void SwRedlineOptionsTabPage::Reset( const SfxItemSet&  )
 	aInsertLB.SelectEntryPos(0);
 	aDeletedLB.SelectEntryPos(0);
 	aChangedLB.SelectEntryPos(0);
-    
+
     lcl_FillRedlineAttrListBox(aInsertLB, rInsertAttr, aInsertAttrMap,
             sizeof(aInsertAttrMap) / sizeof(sal_uInt16));
     lcl_FillRedlineAttrListBox(aDeletedLB, rDeletedAttr, aDeletedAttrMap,
             sizeof(aDeletedAttrMap) / sizeof(sal_uInt16));
     lcl_FillRedlineAttrListBox(aChangedLB, rChangedAttr, aChangedAttrMap,
             sizeof(aChangedAttrMap) / sizeof(sal_uInt16));
-    
+
 	sal_uInt16 nPos = 0;
 	switch (pOpt->GetMarkAlignMode())
 	{
@@ -2621,5 +2618,3 @@ IMPL_LINK_INLINE_START( SwTestTabPage, AutoClickHdl, CheckBox *, EMPTYARG )
 }
 IMPL_LINK_INLINE_END( SwTestTabPage, AutoClickHdl, CheckBox *, EMPTYARG )
 #endif
-
-

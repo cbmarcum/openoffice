@@ -64,7 +64,7 @@ SunVersion::SunVersion(const char * szVer):
 }
 
 
-/**Format major.minor.maintainance_update
+/**Format major.minor.maintenance_update
  */
 bool SunVersion::init(const char *szVersion)
 {
@@ -95,10 +95,10 @@ bool SunVersion::init(const char *szVersion)
         else if (
             ! (nPartPos == 0) // prevents: ".4.1", "..1", part must start with digit
             && (
-                //seperators after maintenance (1.4.1_01, 1.4.1-beta, or1.4.1
+                //separators after maintenance (1.4.1_01, 1.4.1-beta, or1.4.1
                 ((pCur == pEnd || *pCur == '_' || *pCur == '-') && (nPart == 2 ))
                 ||
-                //separators between major-minor and minor-maintainance
+                //separators between major-minor and minor-maintenance
                 (nPart < 2 && *pCur == '.') )
             && (
                 //prevent 1.4.0. 1.4.0-
@@ -217,7 +217,7 @@ SunVersion::PreRelease SunVersion::getPreRelease(const char *szRelease)
     if (szRelease == NULL)
         return Rel_NONE;
 #ifdef OS2
-	// all prerelases codes are threated the same way (-ga1, -ga2, ...)
+	// all prerelases codes are treated the same way (-ga1, -ga2, ...)
         return Rel_OS2;
 #endif
     if( ! strcmp(szRelease,"ea"))
@@ -282,7 +282,7 @@ bool SunVersion::operator > (const SunVersion& ver) const
             return false;
         }
     }
-    //major.minor.maintainance_update are equal. test for a trailing char
+    //major.minor.maintenance_update are equal. test for a trailing char
     if (m_nUpdateSpecial > ver.m_nUpdateSpecial)
     {   
         return true;
@@ -338,12 +338,15 @@ SelfTest::SelfTest()
                          "1.4.1_01", "9.90.99_09", "1.4.1_99",
                          "1.4.1_00a", 
                          "1.4.1-ea", "1.4.1-beta", "1.4.1-rc1",
-                         "1.5.0_01-ea", "1.5.0_01-rc2"};
+                         "1.5.0_01-ea", "1.5.0_01-rc2",
+                         "1.7.0_161"};
     char const * badVersions[] = {".4.0", "..1", "", "10.0", "10.10.0.", "10.10.0-", "10.10.0.",
                             "10.2-2", "10_10.0", "10..10","10.10", "a.0.999",
                             "1.4b.1_01", "9.90.-99_09", "1.4.1_99-",
                             "1.4.1_00a2", "1.4.0_z01z", "1.4.1__99A",
-                            "1.4.1-1ea", "1.5.0_010", "1.5.0._01-", "1.5.0_01-eac"};
+                            // "1.5.0_010" is now valid
+                            // "1.4.1-1ea", "1.5.0_010", "1.5.0._01-", "1.5.0_01-eac"};
+                            "1.4.1-1ea", "1.8.0_0100", "1.5.0._01-", "1.5.0_01-eac"};
     char const * orderedVer[] = { "1.3.1-ea", "1.3.1-beta", "1.3.1-rc1",
                             "1.3.1", "1.3.1_00a", "1.3.1_01", "1.3.1_01a",
                             "1.3.2", "1.4.0", "1.5.0_01-ea", "2.0.0"};

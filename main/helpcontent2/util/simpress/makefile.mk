@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,22 +7,19 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
-
-
-
-# edit to match directory level 
+# edit to match directory level
 PRJ		= ..$/..
 # same for all makefiles in "helpcontent2"
 PRJNAME = helpcontent2
@@ -47,7 +44,7 @@ LINKNAME=simpress
 LINKADDEDFILES= \
    -add simpress.cfg $(PRJ)$/source$/auxiliary$/LANGUAGE$/simpress.cfg \
    -add simpress.tree $(COMMONMISC)$/LANGUAGE$/simpress.tree \
-   -add simpress.jar  $(COMMONBIN)$/xhp_simpress_LANGUAGE.zip
+   -add simpress.jar $(COMMONBIN)$/xhp_simpress_LANGUAGE.zip
 
 
 LINKADDEDDEPS= \
@@ -190,7 +187,7 @@ LINKLINKFILES= \
    text$/simpress$/01$/effectoptionstext.xhp \
    text$/simpress$/01$/effectoptionstiming.xhp \
    text$/simpress$/01$/slidesorter.xhp \
-   text$/simpress$/01$/taskpanel.xhp \
+   text$/simpress$/01$/sidebar.xhp \
    text$/simpress$/02$/04010000.xhp \
    text$/simpress$/02$/04020000.xhp \
    text$/simpress$/02$/04030000.xhp \
@@ -223,7 +220,6 @@ LINKLINKFILES= \
    text$/simpress$/02$/13040000.xhp \
    text$/simpress$/02$/13050000.xhp \
    text$/simpress$/02$/13060000.xhp \
-   text$/simpress$/02$/13070000.xhp \
    text$/simpress$/02$/13080000.xhp \
    text$/simpress$/02$/13090000.xhp \
    text$/simpress$/02$/13100000.xhp \
@@ -323,7 +319,6 @@ LINKLINKFILES= \
    text$/shared$/00$/00000404.xhp \
    text$/shared$/00$/00000406.xhp \
    text$/shared$/00$/00000407.xhp \
-   text$/shared$/00$/00000408.xhp \
    text$/shared$/00$/00000409.xhp \
    text$/shared$/00$/00000450.xhp \
    text$/shared$/00$/00040500.xhp \
@@ -864,7 +859,6 @@ LINKLINKFILES= \
    text$/shared$/autopi$/01170300.xhp \
    text$/shared$/autopi$/01170400.xhp \
    text$/shared$/autopi$/01170500.xhp \
-   text$/shared$/autopi$/purchase.xhp \
    text$/shared$/autopi$/startup.xhp \
    text$/shared$/autopi$/webwizard00.xhp \
    text$/shared$/autopi$/webwizard01.xhp \
@@ -1243,8 +1237,7 @@ LINKLINKFILES= \
    text$/schart$/04$/01020000.xhp \
    text$/schart$/main0000.xhp \
    text$/schart$/main0202.xhp \
-   text$/schart$/main0503.xhp \
-
+   text$/schart$/main0503.xhp
 
 # --- Targets ------------------------------------------------------
 

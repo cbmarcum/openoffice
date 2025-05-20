@@ -146,7 +146,7 @@
     my $post_job = '';        # -"-
     my @warnings = (); # array of warnings to be shown at the end of the process
     my @errors = (); # array of errors to be shown at the end of the process
-    my %html_info = (); # hash containing all necessary info for generating of html page
+    my %html_info = (); # hash containing all necessary info for generating of HTML page
     my %module_by_hash = (); # hash containing all modules names as values and correspondent hashes as keys
     my %build_in_progress = (); # hash of modules currently being built
     my %build_is_finished = (); # hash of already built modules
@@ -528,7 +528,7 @@ sub schedule_rebuild {
             initialize_html_info($_);
 
             foreach my $waiter (keys %{$reversed_dependencies{$_}}) {
-                # for rebuild_all_dependent - refacture "if" condition
+                # for rebuild_all_dependent - refactor "if" condition
                 ${$global_deps_hash{$waiter}}{$_}++ if (!defined $build_is_finished{$waiter});
             };
             delete $projects_deps_hash{$_} if defined $projects_deps_hash{$_};
@@ -1435,7 +1435,7 @@ sub usage {
     print STDERR "        --with_branches- the same as \"--from\" but with build all projects in neighbour branches\n";
     print STDERR "        --skip       - do not build certain module(s)\n";
     print STDERR "        --since      - build all projects beginning from the specified till current one (the same as \"--all:prj_name\", but skipping prj_name)\n";
-    print STDERR "        --checkmodules      - check if all required parent projects are availlable\n";
+    print STDERR "        --checkmodules      - check if all required parent projects are available\n";
     print STDERR "        --show       - show what is going to be built\n";
     print STDERR "        --file       - generate command file file_name\n";
     print STDERR "        --deliver    - only deliver, no build (usable for \'-all\' and \'-from\' keys)\n";
@@ -2705,7 +2705,7 @@ sub do_exit {
 };
 
 #
-# Procedure sorts module in user-frendly order
+# Procedure sorts module in user-friendly order
 #
 sub sort_modules_appearance {
     foreach (keys %dead_parents) {

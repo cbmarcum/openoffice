@@ -71,7 +71,7 @@ public:
 
 protected:
     /** This dummy default c'tor will never call the c'tor of the virtual base
-        class BinaryStreamBase as this class cannot be instanciated directly. */
+        class BinaryStreamBase as this class cannot be instantiated directly. */
     inline explicit     BinaryOutputStream() : BinaryStreamBase( false ) {}
 };
 
@@ -110,6 +110,9 @@ public:
                             bool bAutoClose );
 
     virtual             ~BinaryXOutputStream();
+
+    /** Flushes the output stream. */
+    void                flush();
 
     /** Flushes and closes the output stream. Does also close the wrapped UNO
         output stream if bAutoClose has been set to true in the constructor. */

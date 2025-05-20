@@ -67,7 +67,7 @@
 #define RDBFILE                                     DECLARE_ASCII("typecfg.rdb" )
 #define ARGUMENT_DIRNAME                            DECLARE_ASCII("-dir="       )           // argument for output directory
 #define ARGUMENT_VERSION                            DECLARE_ASCII("-ver="       )           // argument for file version to read    [1|2|3]
-#define ARGUMENTLENGTH                              5                                       // same length for all arguemnts make it easier to detect it :-)
+#define ARGUMENTLENGTH                              5                                       // same length for all arguments make it easier to detect it :-)
 #define ARGUMENTFOUND                               0                                       // OUString::compareTo returns 0 if searched string match given one
 
 #define MENU_HTML                                   "menu.html"
@@ -222,7 +222,7 @@ void CFGView::impl_printCopyright()
 void CFGView::impl_printSyntax()
 {
     fprintf( stderr, "\nusing: xml2xcd -fi=<outputfile> -vi=<version input> -vo=<version output> [-wr=<true|false>]\n\n"    );
-    fprintf( stderr, "\tneccessary parameters:\n"                                                                           );
+    fprintf( stderr, "\tnecessary parameters:\n"                                                                           );
     fprintf( stderr, "\t\t-fi=<outputfile>\tname of output file in system notation\n"                                       );
     fprintf( stderr, "\t\t-vi=<version input>\tformat version of input xml file\n"                                          );
     fprintf( stderr, "\t\t-vo=<version output>\tformat version of generated xcd file\n\n"                                   );
@@ -233,7 +233,7 @@ void CFGView::impl_printSyntax()
 /*-************************************************************************************************************//**
     @short      analyze command line arguments
     @descr      Created binary accept different command line arguments. These parameters
-                regulate creation of this html view. Follow arguments are supported:
+                regulate creation of this HTML view. Follow arguments are supported:
                     "-dir=<directory for output files>"
                     "-ver=<version of input file>[1|2|3]"
 

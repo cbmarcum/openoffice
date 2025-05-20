@@ -77,7 +77,7 @@ COMPONENT_MANIFEST_GENERIC:=TRUE
 COMPONENT_MANIFEST_SEARCHDIR:=registry
 
 
-# variables to trigger predifined targets
+# variables to trigger predefined targets
 # just copy:
 COMPONENT_FILES= \
     $(EXTENSIONDIR)$/xMyExtension$(EXECPOST) \
@@ -146,4 +146,3 @@ $(COMPONENT_DIALOGS) : dialogs$/$$(@:f)
 $(CUSTOM_LICENSE) : my_license.txt
 	@@-$(MKDIRHIER) $(@:d)
     $(COPY) $< $@
-

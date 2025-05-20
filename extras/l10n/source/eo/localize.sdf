@@ -33665,8 +33665,8 @@ scp2	source\calc\registryitem_calc.ulf	0	LngText	STR_REG_VAL_MS_EXCEL_WORKSHEET_
 scp2	source\calc\registryitem_calc.ulf	0	LngText	STR_REG_VAL_NEW				0	eo	Nova				2002-02-02 02:02:02
 scp2	source\calc\registryitem_calc.ulf	0	LngText	STR_REG_VAL_OO_CALC				0	eo	Kalkultabelo de OpenDocument				2002-02-02 02:02:02
 scp2	source\calc\registryitem_calc.ulf	0	LngText	STR_REG_VAL_OO_CALC_TEMPLATE				0	eo	Kalkultabela ŝablono de OpenDocument				2002-02-02 02:02:02
-scp2	source\calc\registryitem_calc.ulf	0	LngText	STR_REG_VAL_SO60_CALC_TEMPLATE				0	eo	Ŝablono de kalkultabelo de %PRODUCTNAME %sXXWFORMATVERSION				2002-02-02 02:02:02
-scp2	source\calc\registryitem_calc.ulf	0	LngText	STR_REG_VAL_SO60_SPREADSHEET				0	eo	Kalkultabelo de %PRODUCTNAME %sXXWFORMATVERSION				2002-02-02 02:02:02
+scp2	source\calc\registryitem_calc.ulf	0	LngText	STR_REG_VAL_SO60_CALC_TEMPLATE				0	eo	Ŝablono de kalkultabelo de %PRODUCTNAME %SXWFORMATVERSION				2002-02-02 02:02:02
+scp2	source\calc\registryitem_calc.ulf	0	LngText	STR_REG_VAL_SO60_SPREADSHEET				0	eo	Kalkultabelo de %PRODUCTNAME %SXWFORMATVERSION				2002-02-02 02:02:02
 scp2	source\draw\folderitem_draw.ulf	0	LngText	STR_FI_NAME_ZEICHNUNG				0	eo	Desegnaĵo				2002-02-02 02:02:02
 scp2	source\draw\folderitem_draw.ulf	0	LngText	STR_FI_TOOLTIP_DRAW				0	eo	Krei kaj redakti desegnaĵojn, stirfluajn diagramojn, kaj emblemojn per Desegnilo.				2002-02-02 02:02:02
 scp2	source\draw\module_draw.ulf	0	LngText	STR_DESC_MODULE_PRG_DRAW				0	eo	Krei kaj redakti desegnaĵojn, stirfluajn diagramojn, kaj emblemojn per %PRODUCTNAME Desegnilo.				2002-02-02 02:02:02
@@ -33678,8 +33678,8 @@ scp2	source\draw\module_draw.ulf	0	LngText	STR_NAME_MODULE_PRG_DRAW_HELP				0	eo
 scp2	source\draw\registryitem_draw.ulf	0	LngText	STR_REG_VAL_NEW				0	eo	&Nova				2002-02-02 02:02:02
 scp2	source\draw\registryitem_draw.ulf	0	LngText	STR_REG_VAL_OO_DRAW				0	eo	Desegnaĵo de OpenDocument				2002-02-02 02:02:02
 scp2	source\draw\registryitem_draw.ulf	0	LngText	STR_REG_VAL_OO_DRAW_TEMPLATE				0	eo	Desegnaĵa ŝablono de OpenDocument				2002-02-02 02:02:02
-scp2	source\draw\registryitem_draw.ulf	0	LngText	STR_REG_VAL_SO60_DRAWING				0	eo	Desegnaĵo %PRODUCTNAME %sXXWFORMATVERSION				2002-02-02 02:02:02
-scp2	source\draw\registryitem_draw.ulf	0	LngText	STR_REG_VAL_SO60_DRAW_TEMPLATE				0	eo	Ŝablono de desegnaĵo %PRODUCTNAME %sXXWFORMATVERSION				2002-02-02 02:02:02
+scp2	source\draw\registryitem_draw.ulf	0	LngText	STR_REG_VAL_SO60_DRAWING				0	eo	Desegnaĵo %PRODUCTNAME %SXWFORMATVERSION				2002-02-02 02:02:02
+scp2	source\draw\registryitem_draw.ulf	0	LngText	STR_REG_VAL_SO60_DRAW_TEMPLATE				0	eo	Ŝablono de desegnaĵo %PRODUCTNAME %SXWFORMATVERSION				2002-02-02 02:02:02
 scp2	source\gnome\module_gnome.ulf	0	LngText	STR_DESC_MODULE_OPTIONAL_GNOME				0	eo	Sistemintegrado def %PRODUCTNAME %PRODUCTVERSION en Gnoman Labortablan Medion.				2002-02-02 02:02:02
 scp2	source\gnome\module_gnome.ulf	0	LngText	STR_NAME_MODULE_OPTIONAL_GNOME				0	eo	GNOME-integrado				2002-02-02 02:02:02
 scp2	source\graphicfilter\module_graphicfilter.ulf	0	LngText	STR_DESC_MODULE_OPTIONAL_GRFFLT				0	eo	Kromaj filtriloj estas bezonataj por legi fremdajn grafikajn formatojn.				2002-02-02 02:02:02
@@ -33730,7 +33730,7 @@ scp2	source\impress\registryitem_impress.ulf	0	LngText	STR_REG_VAL_MS_POWERPOINT
 scp2	source\impress\registryitem_impress.ulf	0	LngText	STR_REG_VAL_NEW				0	eo	Nova				2002-02-02 02:02:02
 scp2	source\impress\registryitem_impress.ulf	0	LngText	STR_REG_VAL_OO_PRESENT				0	eo	Prezentaĵo de OpenDocument				2002-02-02 02:02:02
 scp2	source\impress\registryitem_impress.ulf	0	LngText	STR_REG_VAL_OO_PRESENT_TEMPLATE				0	eo	Prezentaĵa ŝablono de OpenDocument				2002-02-02 02:02:02
-scp2	source\impress\registryitem_impress.ulf	0	LngText	STR_REG_VAL_SO60_IMPRESS_TEMPLATE				0	eo	Ŝablono de prezentaĵo %PRODUCTNAME %sXXWFORMATVERSION				2002-02-02 02:02:02
+scp2	source\impress\registryitem_impress.ulf	0	LngText	STR_REG_VAL_SO60_IMPRESS_TEMPLATE				0	eo	Ŝablono de prezentaĵo %PRODUCTNAME %SXWFORMATVERSION				2002-02-02 02:02:02
 scp2	source\impress\registryitem_impress.ulf	0	LngText	STR_REG_VAL_SO60_PRESENT				0	eo	Prezentaĵo de %PRODUCTNAME %ŜWFORMATVERSION				2002-02-02 02:02:02
 scp2	source\impress\registryitem_impress.ulf	0	LngText	STR_REG_VAL_SO60_SHOW				0	eo	Vidigi				2002-02-02 02:02:02
 scp2	source\javafilter\module_javafilter.ulf	0	LngText	STR_DESC_MODULE_OPTIONAL_JAVAFILTER				0	eo	Tekstaj kaj kalkultabelaj filtriloj por subteni import/eksportadon por mana komputilo Palm aŭ Pocket PC (bezonas Ĝavon).				2002-02-02 02:02:02
@@ -33768,7 +33768,7 @@ scp2	source\math\module_math.ulf	0	LngText	STR_NAME_MODULE_PRG_MATH_BIN				0	eo	
 scp2	source\math\module_math.ulf	0	LngText	STR_NAME_MODULE_PRG_MATH_HELP				0	eo	Helpo de %PRODUCTNAME Formulilo				2002-02-02 02:02:02
 scp2	source\math\registryitem_math.ulf	0	LngText	STR_REG_VAL_NEW				0	eo	&Nova				2002-02-02 02:02:02
 scp2	source\math\registryitem_math.ulf	0	LngText	STR_REG_VAL_OO_FORMULA				0	eo	Formulo de OpenDocument				2002-02-02 02:02:02
-scp2	source\math\registryitem_math.ulf	0	LngText	STR_REG_VAL_SO60_FORMULA				0	eo	Formulo %PRODUCTNAME %sXXWFORMATVERSION				2002-02-02 02:02:02
+scp2	source\math\registryitem_math.ulf	0	LngText	STR_REG_VAL_SO60_FORMULA				0	eo	Formulo %PRODUCTNAME %SXWFORMATVERSION				2002-02-02 02:02:02
 scp2	source\onlineupdate\module_onlineupdate.ulf	0	LngText	STR_DESC_MODULE_OPT_ONLINEUPDATE				0	eo	Ricevi aŭtomatan sciigon kiam nova ĝisdatigo de %PRODUCTNAME iĝas havebla.				2002-02-02 02:02:02
 scp2	source\onlineupdate\module_onlineupdate.ulf	0	LngText	STR_NAME_MODULE_OPT_ONLINEUPDATE				0	eo	Enreta ĝisdatigo				2002-02-02 02:02:02
 scp2	source\ooo\directory_ooo.ulf	0	LngText	STR_DIR_DATEIEN				0	eo	Dosieroj				2002-02-02 02:02:02
@@ -34017,7 +34017,7 @@ scp2	source\ooo\registryitem_ooo.ulf	0	LngText	STR_REG_VAL_APPCAPABILITY_DESCRIP
 scp2	source\ooo\registryitem_ooo.ulf	0	LngText	STR_REG_VAL_INSTALL				0	eo	Instali				2002-02-02 02:02:02
 scp2	source\ooo\registryitem_ooo.ulf	0	LngText	STR_REG_VAL_NEW				0	eo	&Nova				2002-02-02 02:02:02
 scp2	source\ooo\registryitem_ooo.ulf	0	LngText	STR_REG_VAL_SO50_TEMPLATE_OOO				0	eo	Ŝablono de StarOffice 5.0				2002-02-02 02:02:02
-scp2	source\ooo\registryitem_ooo.ulf	0	LngText	STR_REG_VAL_SO60_CONFIGFILE				0	eo	Agorda dosiero de %PRODUCTNAME %sXXWFORMATVERSION				2002-02-02 02:02:02
+scp2	source\ooo\registryitem_ooo.ulf	0	LngText	STR_REG_VAL_SO60_CONFIGFILE				0	eo	Agorda dosiero de %PRODUCTNAME %SXWFORMATVERSION				2002-02-02 02:02:02
 scp2	source\python\module_python.ulf	0	LngText	STR_DESC_MODULE_OPTIONAL_PYTHON				0	eo	Ebligas aŭtomatigon de %PRODUCTNAME per la skripta lingvo Python. Vidu al http://udk.openoffice.org/python/python-bridge.html por plena dokumentaro.				2002-02-02 02:02:02
 scp2	source\python\module_python.ulf	0	LngText	STR_NAME_MODULE_OPTIONAL_PYTHON				0	eo	Ponto de Python-UNO				2002-02-02 02:02:02
 scp2	source\python\module_python_mailmerge.ulf	0	LngText	STR_DESC_MODULE_OPTIONAL_PYTHON_MAILMERGE				0	eo	Modulo por eblo de %PRODUCTNAME retpoŝta kunfandado				2002-02-02 02:02:02
@@ -34051,9 +34051,9 @@ scp2	source\writer\registryitem_writer.ulf	0	LngText	STR_REG_VAL_OO_MASTERDOC			
 scp2	source\writer\registryitem_writer.ulf	0	LngText	STR_REG_VAL_OO_WEBDOC				0	eo	Ŝablono de HTML-a dokumento				2002-02-02 02:02:02
 scp2	source\writer\registryitem_writer.ulf	0	LngText	STR_REG_VAL_OO_WRITER				0	eo	Teksto de OpenDocument				2002-02-02 02:02:02
 scp2	source\writer\registryitem_writer.ulf	0	LngText	STR_REG_VAL_OO_WRITER_TEMPLATE				0	eo	Teksta ŝablono de OpenDocument				2002-02-02 02:02:02
-scp2	source\writer\registryitem_writer.ulf	0	LngText	STR_REG_VAL_SO60_MASTERDOC				0	eo	Modela dokumento de %PRODUCTNAME %sXXWFORMATVERSION				2002-02-02 02:02:02
-scp2	source\writer\registryitem_writer.ulf	0	LngText	STR_REG_VAL_SO60_TEXT				0	eo	Tekstdokumento %PRODUCTNAME %sXXWFORMATVERSION				2002-02-02 02:02:02
-scp2	source\writer\registryitem_writer.ulf	0	LngText	STR_REG_VAL_SO60_WRITER_TEMPLATE				0	eo	Ŝablono de tekstdokumento de %PRODUCTNAME %sXXWFORMATVERSION				2002-02-02 02:02:02
+scp2	source\writer\registryitem_writer.ulf	0	LngText	STR_REG_VAL_SO60_MASTERDOC				0	eo	Modela dokumento de %PRODUCTNAME %SXWFORMATVERSION				2002-02-02 02:02:02
+scp2	source\writer\registryitem_writer.ulf	0	LngText	STR_REG_VAL_SO60_TEXT				0	eo	Tekstdokumento %PRODUCTNAME %SXWFORMATVERSION				2002-02-02 02:02:02
+scp2	source\writer\registryitem_writer.ulf	0	LngText	STR_REG_VAL_SO60_WRITER_TEMPLATE				0	eo	Ŝablono de tekstdokumento de %PRODUCTNAME %SXWFORMATVERSION				2002-02-02 02:02:02
 scp2	source\xsltfilter\module_xsltfilter.ulf	0	LngText	STR_DESC_MODULE_OPTIONAL_XSLTFILTERSAMPLES				0	eo	XSLT-Samplaj Filtriloj				2002-02-02 02:02:02
 scp2	source\xsltfilter\module_xsltfilter.ulf	0	LngText	STR_NAME_MODULE_OPTIONAL_XSLTFILTERSAMPLES				0	eo	XSLT-Samplaj Filtriloj				2002-02-02 02:02:02
 sd	source\core\glob.src	0	string	RID_SD_ERRHDL	ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_FILE_ROWCOL )			0	eo	Formateraro malkovrita en la dosiero en subdokumento  $(ARG1) je pozicio $(ARG2)(row,col).				2002-02-02 02:02:02

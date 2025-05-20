@@ -1446,7 +1446,7 @@ namespace accessibility
         DBG_CHKTHIS( AccessibleEditableTextPara, NULL );
         ::vos::OGuard aGuard( Application::GetSolarMutex() );
 	
-		//Skip the bullet range to ingnore the bullet text 
+		//Skip the bullet range to ignore the bullet text
 		SvxTextForwarder& rCacheTF = GetTextForwarder();
 		EBulletInfo aBulletInfo = rCacheTF.GetBulletInfo( GetParagraphIndex() );
 		if (aBulletInfo.bVisible)
@@ -1464,7 +1464,7 @@ namespace accessibility
 			bSupplementalMode = true;
 			aPropertyNames = getAttributeNames();
 		}
-        // get default attribues...
+        // get default attributes...
         ::comphelper::SequenceAsHashMap aPropHashMap( getDefaultAttributes( aPropertyNames ) );
 
         // ... and override them with the direct attributes from the specific position
@@ -2059,7 +2059,7 @@ namespace accessibility
                 else
                 {
                     sal_uInt16 nStartIndex, nEndIndex;
-					//For the bullet paragraph, the bullet string is ingnored for IAText::attributes() function.
+					//For the bullet paragraph, the bullet string is ignored for IAText::attributes() function.
 					SvxTextForwarder&	rCacheTF = GetTextForwarder();
 					// MT IA2: Not used? sal_Int32 nBulletLen = 0;
 					EBulletInfo aBulletInfo = rCacheTF.GetBulletInfo( GetParagraphIndex() );
@@ -2208,7 +2208,7 @@ namespace accessibility
                 //the text value doesn't contain the bullet characters. all of the bullet and numbering info are exposed
                 //by the IAText::attributes(). So here must do special support for bullet line.
                 sal_Int32 nCurIndex=0, nLastIndex=0, nCurLineLen=0; 
-                sal_Int32 nLastLineLen = 0, nBulletLen = 0;;
+                sal_Int32 nLastLineLen = 0, nBulletLen = 0;
                 // get the line before the line the index points into
                 for( nLine=0, nCurIndex=0, nLastIndex=0; nLine<nLineCount; ++nLine )
                 {

@@ -704,7 +704,7 @@ STDMETHODIMP CMAccessible::get_accKeyboardShortcut(VARIANT varChild, BSTR *pszKe
 
 							m_pIParent->get_accRole(varChild, &varParentRole);
 
-							if( m_pIParent && varParentRole.lVal == ROLE_SYSTEM_COMBOBOX ) // edit in comoboBox
+							if( m_pIParent && varParentRole.lVal == ROLE_SYSTEM_COMBOBOX ) // edit in comboBox
 							{
 								m_pIParent->get_accKeyboardShortcut(varChild, pszKeyboardShortcut);
 								return S_OK;
@@ -2191,7 +2191,7 @@ HRESULT CMAccessible::SelectChild(XAccessible* pItem)
 }
 
 /**
-* Deselect one XAccessible item, for accSelect implimentation
+* Deselect one XAccessible item, for accSelect implementation
 * @param	pItem, the item should be deselected.
 * @return  S_OK if successful.
 */
@@ -2223,7 +2223,7 @@ HRESULT CMAccessible::DeSelectChild(XAccessible* pItem)
 * @param	size, the size of the items.
 * @return  S_OK if successful.
 */
-HRESULT	CMAccessible::SelectMutipleChidren( XAccessible** pItem,int size )
+HRESULT	CMAccessible::SelectMultipleChidren( XAccessible** pItem,int size )
 {
 
 	ENTER_PROTECTED_BLOCK
@@ -2248,7 +2248,7 @@ HRESULT	CMAccessible::SelectMutipleChidren( XAccessible** pItem,int size )
 * @param	size, the size of the items.
 * @return  S_OK if successful.
 */
-HRESULT CMAccessible::DeSelectMutipleChildren( XAccessible** pItem,int size )
+HRESULT CMAccessible::DeSelectMultipleChildren( XAccessible** pItem,int size )
 {
 
 	ENTER_PROTECTED_BLOCK

@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #include <sfx2/sfx.hrc>
 #include "doc.hrc"
 #define __RSC
@@ -124,7 +122,7 @@ String STR_TEMPLATE_FILTER
 };
 String STR_ERROR_COPY_TEMPLATE
 {
-	Text [ en-US ] = "Error copying template \"$1\". \nA template with this name may already exist." ;
+	Text [ en-US ] = "Error copying template \"$1\".\nA template with this name may already exist." ;
 };
 String STR_ERROR_DELETE_TEMPLATE
 {
@@ -302,7 +300,7 @@ String STR_TEMPL_MOVED
 };
 String STR_TEMPL_RESET
 {
-	Text [ en-US ] = "The template \"$(TEMPLATE)\" has not been found. Should the template be looked for the next time the document is opened ?" ;
+	Text [ en-US ] = "The template \"$(TEMPLATE)\" has not been found. Should the template be looked for the next time the document is opened?" ;
 };
 String STR_AUTOMATICVERSION
 {
@@ -476,7 +474,7 @@ String STR_SHARED
 
 String STR_XMLSEC_ODF12_EXPECTED
 {
-	Text [ en-US ] = "The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-Options-Load/Save-General. Signing documents requires ODF 1.2 (OpenOffice.org 3.x)." ;
+	Text [ en-US ] = "The document format version is set to ODF 1.1 in Tools - Options - Load/Save - General. Signing documents requires ODF 1.2." ;
 };
 
 QueryBox MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN

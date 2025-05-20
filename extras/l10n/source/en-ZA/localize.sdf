@@ -63511,7 +63511,7 @@ svx	source\svdraw\svdstr.src	0	string	STR_DragMethShear				0	en-ZA	Distort %1 (s
 svx	source\svdraw\svdstr.src	0	string	STR_DragMethCrook				0	en-ZA	Arrange %1 in circle				2002-02-02 02:02:02
 svx	source\svdraw\svdstr.src	0	string	STR_DragMethCrookContortion				0	en-ZA	Curve %1 in circle				2002-02-02 02:02:02
 svx	source\svdraw\svdstr.src	0	string	STR_DragMethDistort				0	en-ZA	Distort %1				2002-02-02 02:02:02
-svx	source\svdraw\svdstr.src	0	string	STR_DragMethCrop				0	en-ZA	Crop %O				2002-02-02 02:02:02
+svx	source\svdraw\svdstr.src	0	string	STR_DragMethCrop				0	en-ZA	Crop %1				2002-02-02 02:02:02
 svx	source\svdraw\svdstr.src	0	string	STR_DragRectEckRad				0	en-ZA	Alter radius by %1				2002-02-02 02:02:02
 svx	source\svdraw\svdstr.src	0	string	STR_DragPathObj				0	en-ZA	Change %1				2002-02-02 02:02:02
 svx	source\svdraw\svdstr.src	0	string	STR_DragRectResize				0	en-ZA	Resize %1				2002-02-02 02:02:02

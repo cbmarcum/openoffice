@@ -130,7 +130,7 @@ public:
         try 
         {
             // Characters, ParagraphCount & WordCount are available from
-            // the model ( and addtionally these also update the statics object )
+            // the model ( and additionally these also update the statics object )
             //return mxProps->getPropertyValue( rPropName );
             return mxModelProps->getPropertyValue( rPropName );
         }
@@ -345,7 +345,7 @@ rtl::OUString
 SwVbaCustomDocumentProperty::getLinkSource(  ) throw (script::BasicErrorException, uno::RuntimeException)
 {
     // #FIXME we need to store the link content somewhere
-    return rtl::OUString();;
+    return rtl::OUString();
 }
 
 void

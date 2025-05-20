@@ -23,7 +23,6 @@
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
-/* -*- Mode: C; tab-width: 4; indent-tabs-mode: nil -*- */
 
 #include <com/sun/star/embed/ElementModes.hpp>
 #include <com/sun/star/embed/XStorage.hpp>
@@ -219,8 +218,8 @@ void lclIgnoreString32( SvMemoryStream& rStrm, bool b16Bit )
 String SwWW8ImplReader::ReadRawUniString( SvMemoryStream& rStrm,sal_uInt16 nChars, bool b16Bit )
 {
 	// Fixed-size characters
-	const sal_uInt8 WW8_NUL_C                   = '\x00';       /// NUL chararcter.
-	const sal_uInt16 WW8_NUL                    = WW8_NUL_C;    /// NUL chararcter (unicode).
+	const sal_uInt8 WW8_NUL_C                   = '\x00';       /// NUL character.
+	const sal_uInt16 WW8_NUL                    = WW8_NUL_C;    /// NUL character (unicode).
 	String aRet;
 	sal_Unicode         mcNulSubst = '\0';
 
@@ -2476,7 +2475,7 @@ bool SwWW8ImplReader::ProcessSpecial(bool &rbReSync, WW8_CP nStartCp)
         if ( pPaM && pPaM->GetPoint() )
             idcur = pPaM->GetPoint()->nNode.GetIndex();
     
-        // Memory first table postion info
+        // Memory first table position info
         if ( !pFirstTablePap && idstart + 1 == idcur )
             pFirstTablePap = pPap;
 
@@ -2943,7 +2942,7 @@ bool SwWW8ImplReader::AddTextToParagraph(const String& rAddString)
 /*
 #ifdef DEBUG
 //!! does not compile with debug=t -> unresolved external (dbg_out),
-//!! sommeone who knows what he wants to get should fix this
+//!! someone who knows what he wants to get should fix this
 //        ::std::clog << "<addTextToParagraph>" << dbg_out(rAddString)
 //        << "</addTextToParagraph>" << ::std::endl;
 #endif
@@ -5699,6 +5698,3 @@ SdrObjUserData* SwMacroInfo::Clone( SdrObject* /*pObj*/ ) const
 {
    return new SwMacroInfo( *this );
 }
-
-
-

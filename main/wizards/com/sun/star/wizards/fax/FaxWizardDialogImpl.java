@@ -130,7 +130,7 @@ public class FaxWizardDialogImpl extends FaxWizardDialog
             //Number of steps on WizardDialog:
             setMaxStep(5);
 
-            //instatiate The Document Frame for the Preview
+            //instantiate The Document Frame for the Preview
             myFaxDoc = new FaxDocument(xMSF, this);
 
             //create the dialog:
@@ -176,7 +176,7 @@ public class FaxWizardDialogImpl extends FaxWizardDialog
             //If the configuration does not define Greeting/Salutation/CommunicationType yet choose a default
             setDefaultForGreetingAndSalutationAndCommunication();
 
-            //disable funtionality that is not supported by the template:
+            //disable functionality that is not supported by the template:
             initializeElements();
 
             //disable the document, so that the user cannot change anything:

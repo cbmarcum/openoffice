@@ -41,40 +41,43 @@ import com.sun.star.sheet.XCellRangeFormula;
 import com.sun.star.table.CellRangeAddress;
 import com.sun.star.text.XTextRange;
 
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import org.openoffice.test.OfficeConnection;
+
 /**
  *
  * @author  fs93730
  */
-public class CellBinding extends complexlib.ComplexTestCase
+public class CellBinding
 {
-	/** the test document our form layer lives in */
+    private static final OfficeConnection officeConnection = new OfficeConnection();
+    /** the test document our form layer lives in */
     private SpreadsheetDocument     m_document;
     /** our form layer */
     private FormLayer               m_formLayer;
     /** our service factory */
     private XMultiServiceFactory    m_orb;
 
+    @BeforeClass
+    public static void beforeClass() throws java.lang.Exception
+    {
+        officeConnection.setUp();
+    }
+
+    @AfterClass
+    public static void afterClass() throws java.lang.Exception
+    {
+        officeConnection.tearDown();
+    }
+
     /** Creates a new instance of CellBinding */
     public CellBinding()
     {
-    }
-
-    public String[] getTestMethodNames()
-    {
-        return new String[] {
-            "checkTextFieldBinding",
-            "checkBooleanRadioBinding",
-            "checkStringRadioBinding",
-            "checkBooleanCheckBoxBinding",
-            "checkStringCheckBoxBinding",
-            "checkListBoxBinding",
-            "checkListBoxIndexBinding"
-        };
-    }
-
-    public String getTestObjectName()
-    {
-        return "Form Control Spreadsheet Cell Binding Test";
     }
 
     /* ------------------------------------------------------------------ */
@@ -98,20 +101,23 @@ public class CellBinding extends complexlib.ComplexTestCase
     }
 
     /* ------------------------------------------------------------------ */
+    @Before
     public void before() throws com.sun.star.uno.Exception, java.lang.Exception
     {
-        m_orb = (XMultiServiceFactory)param.getMSF();
+        m_orb = UnoRuntime.queryInterface(XMultiServiceFactory.class, officeConnection.getComponentContext().getServiceManager());
         m_document = new SpreadsheetDocument( m_orb );
         m_formLayer = new FormLayer( m_document );
     }
 
     /* ------------------------------------------------------------------ */
+    @After
     public void after() throws com.sun.star.uno.Exception, java.lang.Exception
     {
         closeDocument();
     }
 
     /* ------------------------------------------------------------------ */
+    @Test
     public void checkTextFieldBinding( ) throws com.sun.star.uno.Exception, java.lang.Exception
     {
         final short col = 0;
@@ -120,7 +126,7 @@ public class CellBinding extends complexlib.ComplexTestCase
         final String otherText = new String( "something else" );
         final String yetAnotherText = new String( "yet another text" );
 
-        // cretae a normal text control
+        // create a normal text control
         XPropertySet controlModel = m_formLayer.createControlAndShape( "DatabaseTextField", 30, 9, 30, 6 );
 
         // bind it to cell A1
@@ -141,14 +147,15 @@ public class CellBinding extends complexlib.ComplexTestCase
         setCellText( col, row, yetAnotherText );
         String controlText = (String)controlModel.getPropertyValue( "Text" );
         if ( !controlText.equals( yetAnotherText ) )
-            failed( "Changes in the cell are not forwarded to the text field." );
+            fail( "Changes in the cell are not forwarded to the text field." );
     }
     /* ------------------------------------------------------------------ */
+    @Test
     public void checkBooleanRadioBinding( ) throws com.sun.star.uno.Exception, java.lang.Exception
     {
         // two radio buttons
         XPropertySet primaryRadio = createRadio( 28, "radio button no. 1", "radio group", "primary" );
-        XPropertySet secondaryRadio = createRadio( 33, "radio button no. 2", "radio group", "secodary" );
+        XPropertySet secondaryRadio = createRadio( 33, "radio button no. 2", "radio group", "secondary" );
 
         // bind them
         short col = (short)0;
@@ -177,15 +184,16 @@ public class CellBinding extends complexlib.ComplexTestCase
         // setting an empty cell should result in the radio being unchecked
         setCellEmpty( col, row1 );
         if ( ((Short)primaryRadio.getPropertyValue( "State" )).shortValue() != 0 )
-            failed( "Setting a cell to 'empty' does not reset the bound radio button." );
+            fail( "Setting a cell to 'empty' does not reset the bound radio button." );
     }
 
     /* ------------------------------------------------------------------ */
+    @Test
     public void checkStringRadioBinding( ) throws com.sun.star.uno.Exception, java.lang.Exception
     {
         // two radio buttons
         XPropertySet primaryRadio = createRadio( 46, "radio button A", "radio ref group", "primary" );
-        XPropertySet secondaryRadio = createRadio( 51, "radio button B", "radio ref group", "secodary" );
+        XPropertySet secondaryRadio = createRadio( 51, "radio button B", "radio ref group", "secondary" );
 
         // give the ref values
         String refValueA = new String( "ref value A" );
@@ -217,6 +225,7 @@ public class CellBinding extends complexlib.ComplexTestCase
     }
 
     /* ------------------------------------------------------------------ */
+    @Test
     public void checkBooleanCheckBoxBinding( ) throws com.sun.star.uno.Exception, java.lang.Exception
     {
         XPropertySet checkBox = m_formLayer.createControlAndShape( "DatabaseCheckBox", 30, 59, 40, 4 );
@@ -245,6 +254,7 @@ public class CellBinding extends complexlib.ComplexTestCase
     }
 
     /* ------------------------------------------------------------------ */
+    @Test
     public void checkStringCheckBoxBinding( ) throws com.sun.star.uno.Exception, java.lang.Exception
     {
         String refValue = new String( "checked " );
@@ -279,6 +289,7 @@ public class CellBinding extends complexlib.ComplexTestCase
     /** verifies that a list box, which is bound via an ordinary value binding,
      *  works as expected
      */
+    @Test
     public void checkListBoxBinding( ) throws com.sun.star.uno.Exception, java.lang.Exception
     {
         XPropertySet listBox = m_formLayer.createControlAndShape( "DatabaseListBox", 30, 80, 40, 6 );
@@ -313,7 +324,7 @@ public class CellBinding extends complexlib.ComplexTestCase
 
         setCellText( col, row, "Peaches" );
         short[] selectedItems = (short[])listBox.getPropertyValue( "SelectedItems" );
-        assureEquals( "changes in the cell bound to a list box are not propagated to the list box selection",
+        assertEquals( "changes in the cell bound to a list box are not propagated to the list box selection",
             2, selectedItems[0] );
     }
 
@@ -321,6 +332,7 @@ public class CellBinding extends complexlib.ComplexTestCase
     /** verifies that a list box, which is bound via a value binding exchanging the <b>index</b>
      *  of the selected entry, works as expected
      */
+    @Test
     public void checkListBoxIndexBinding() throws com.sun.star.uno.Exception, java.lang.Exception
     {
         XPropertySet listBox = m_formLayer.createControlAndShape( "DatabaseListBox", 30, 94, 40, 6 );
@@ -355,7 +367,7 @@ public class CellBinding extends complexlib.ComplexTestCase
 
         setCellValue( col, row, 3 );
         short[] selectedItems = (short[])listBox.getPropertyValue( "SelectedItems" );
-        assureEquals( "changes in the cell bound to a list box via list index are not propagated to the list box selection",
+        assertEquals( "changes in the cell bound to a list box via list index are not propagated to the list box selection",
             2, selectedItems[0] );
     }
 
@@ -381,7 +393,7 @@ public class CellBinding extends complexlib.ComplexTestCase
            || ( ((Short)radio2.getPropertyValue( "State" )).shortValue() != value2 )
            )
         {
-            failed( errorMessage );
+            fail( errorMessage );
             return false;
         }
         return true;
@@ -398,7 +410,7 @@ public class CellBinding extends complexlib.ComplexTestCase
         Object cellContent = cell.getDataArray()[0][0];
         if ( ((com.sun.star.uno.Any)cellContent).getType().getTypeClass() != com.sun.star.uno.TypeClass.VOID )
         {
-            failed( failErrorMessage );
+            fail( failErrorMessage );
             return false;
         }
         return true;
@@ -414,7 +426,7 @@ public class CellBinding extends complexlib.ComplexTestCase
         );
         if ( cell.getValue() != value )
         {
-            failed( failErrorMessage );
+            fail( failErrorMessage );
             return false;
         }
         return true;
@@ -430,7 +442,7 @@ public class CellBinding extends complexlib.ComplexTestCase
         );
         if ( !cell.getString().equals( text ) )
         {
-            failed( failErrorMessage );
+            fail( failErrorMessage );
             return false;
         }
         return true;

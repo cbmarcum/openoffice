@@ -152,7 +152,7 @@ struct ImplIMEInfos
 	void	DestroyAttribs();
 };
 
-// #i18881# to be able to identify the postions of changed words
+// #i18881# to be able to identify the positions of changed words
 // the positions of each portion need to be saved
 typedef std::vector<EditSelection>  SpellContentSelections;
 
@@ -1230,5 +1230,3 @@ sal_uInt8 GetCharTypeForCompression( xub_Unicode cChar );
 Point Rotate( const Point& rPoint, short nOrientation, const Point& rOrigin );
 
 #endif // _IMPEDIT_HXX
-
-

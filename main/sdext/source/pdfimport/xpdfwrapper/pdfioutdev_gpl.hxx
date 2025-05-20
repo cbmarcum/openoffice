@@ -82,7 +82,7 @@ namespace pdfi
             size(0.0)
         {}
 
-        // xdpf goo stuff is so totally borked...
+        // xpdf goo stuff is so totally borked...
         // ...need to hand-code assignment
         FontAttributes( const FontAttributes& rSrc ) :
             familyName(),
@@ -273,4 +273,3 @@ typedef char Output_t;
 typedef std::vector< Output_t > OutputBuffer;
 
 #endif /* INCLUDED_PDFI_OUTDEV_HXX */
-

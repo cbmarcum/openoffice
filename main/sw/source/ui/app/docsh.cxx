@@ -255,6 +255,12 @@ sal_Bool SwDocShell::ConvertFrom( SfxMedium& rMedium )
     // Restore the pool default if reading a saved document.
     mpDoc->RemoveAllFmtLanguageDependencies();
 
+    // Trust links on help documents
+    String aFileName( rMedium.GetName() );
+    if (aFileName.SearchAscii("vnd.sun.star.help://") == 0) {
+        mpDoc->GetLinkManager().SetNeverAskUpdateAllLinks();
+    }
+
 	sal_uLong nErr = pRdr->Read( *pRead );
 
 	// Evtl. ein altes Doc weg
@@ -638,7 +644,7 @@ sal_Bool SwDocShell::ConvertTo( SfxMedium& rMedium )
 	}
 
     // --> FME 2007-5-7 #i76360# Update document statistics
-    SwDocStat aDocStat( mpDoc->GetDocStat() );;
+    SwDocStat aDocStat( mpDoc->GetDocStat() );
     mpDoc->UpdateDocStat( aDocStat );
     // <--
 	CalcLayoutForOLEObjects();	// format for OLE objets

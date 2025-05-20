@@ -112,7 +112,7 @@ public:
  *					   class SwSpellIter
  *************************************************************************/
 
-// #i18881# to be able to identify the postions of the changed words
+// #i18881# to be able to identify the positions of the changed words
 // the content positions of each portion need to be saved
 struct SpellContentPosition
 {
@@ -1052,7 +1052,7 @@ uno::Reference< XSpellAlternatives >
 
             if ( xSpellAlt.is() )   // error found?
 			{
-                //save the start and end positons of the line and the starting point
+                //save the start and end positions of the line and the starting point
                 Push();
                 LeftMargin();
                 xub_StrLen nLineStart = GetCrsr()->GetPoint()->nContent.GetIndex();
@@ -1967,5 +1967,3 @@ void SwEditShell::IgnoreGrammarErrorAt( SwPaM& rErrorPosition )
         nStart = 0;
     }
 }    
-
-

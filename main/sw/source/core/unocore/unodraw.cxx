@@ -1077,12 +1077,12 @@ uno::Sequence< sal_Int8 > SwXShape::getImplementationId(  ) throw(uno::RuntimeEx
         if( xAggShape.is() )
 		{
             const rtl::OUString aShapeType( xAggShape->getShapeType() );
-            // did we already compute an implementation id for the agregated shape type?
+            // did we already compute an implementation id for the aggregated shape type?
             SwShapeImplementationIdMap::iterator aIter( aImplementationIdMap.find(aShapeType ) );
 			if( aIter == aImplementationIdMap.end() )
 			{
 				// we need to create a new implementation id for this
-				// note: this memory is not free'd until application exists
+				// note: this memory is not freed until application exists
 				//		 but since we have a fixed set of shapetypes and the
 				//		 memory will be reused this is ok.
                 pImplementationId = new uno::Sequence< sal_Int8 >( 16 );
@@ -2539,7 +2539,7 @@ drawing::HomogenMatrix3 SwXShape::_ConvertTransformationToLayoutDir(
     drawing::HomogenMatrix3 aMatrix( _aMatrixInHoriL2R );
 
     // --> OD 2005-03-10 #i44334#, #i44681# - direct manipulation of the
-    // tranformation structure isn't valid, if it contains rotation.
+    // transformation structure isn't valid, if it contains rotation.
     SvxShape* pSvxShape = GetSvxShape();
     ASSERT( pSvxShape,
             "<SwXShape::_ConvertTransformationToLayoutDir(..)> - no SvxShape found!")
@@ -2620,7 +2620,7 @@ void SwXShape::_AdjustPositionProperties( const awt::Point _aPosition )
     if ( eTextAnchorType != text::TextContentAnchorType_AS_CHARACTER )
     // <--
     {
-        // determine current x-postion
+        // determine current x-position
         rtl::OUString aHoriPosPropStr( RTL_CONSTASCII_USTRINGPARAM("HoriOrientPosition") );
         uno::Any aHoriPos( getPropertyValue( aHoriPosPropStr ) );
         sal_Int32 dCurrX = 0;
@@ -2650,7 +2650,7 @@ void SwXShape::_AdjustPositionProperties( const awt::Point _aPosition )
 
     // handle y-position
     {
-        // determine current y-postion
+        // determine current y-position
         rtl::OUString aVertPosPropStr( RTL_CONSTASCII_USTRINGPARAM("VertOrientPosition") );
         uno::Any aVertPos( getPropertyValue( aVertPosPropStr ) );
         sal_Int32 dCurrY = 0;
@@ -2949,5 +2949,3 @@ sal_Bool SwXGroupShape::hasElements(  ) throw(uno::RuntimeException)
         throw uno::RuntimeException();
     return xAcc->hasElements();
 }
-
-

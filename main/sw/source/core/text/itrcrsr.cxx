@@ -340,7 +340,7 @@ void SwTxtMargin::CtorInitTxtMargin( SwTxtFrm *pNewFrm, SwTxtSizeInfo *pNewInf )
 
         // --> OD 2008-01-31 #newlistlevelattrs#
         // Note: <SwTxtFrm::GetAdditionalFirstLineOffset()> returns a negative
-        //       value for the new list label postion and space mode LABEL_ALIGNMENT
+        //       value for the new list label position and space mode LABEL_ALIGNMENT
         //       and label alignment CENTER and RIGHT in L2R layout respectively
         //       label alignment LEFT and CENTER in R2L layout
         nFirst += pFrm->GetAdditionalFirstLineOffset();
@@ -701,7 +701,7 @@ void SwTxtCursor::_GetCharRect( SwRect* pOrig, const xub_StrLen nOfst,
 						{
                              pLastBidiPor = (SwBidiPortion*)pPor;
                              nLastBidiPorWidth = pLastBidiPor->Width() +
-                                                 pLastBidiPor->CalcSpacing( nSpaceAdd, aInf );;
+                                                 pLastBidiPor->CalcSpacing( nSpaceAdd, aInf );
                         }
                     }
 
@@ -1883,4 +1883,3 @@ bool SwTxtFrm::FillSelection( SwSelectionList& rSelList, const SwRect& rRect ) c
     }
     return bRet;
 }
-

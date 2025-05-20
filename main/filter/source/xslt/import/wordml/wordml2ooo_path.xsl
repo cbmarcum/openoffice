@@ -588,9 +588,9 @@
     <!-- 
     **Template vmlpath2enhancedpath**
     The template is resposible for converting the vml-path to enhanced-path, because the svg:path 
-    cann't support command a now.(But heard that will be supported in OOo3.0)
-    And  the 2nd reason of using an enhanced-path is that enhanced-path have a perfect maping to 
-    vmlpath.(You will find out that often,we  even don't need to change the parameters).
+    can't support command a now.(But heard that will be supported in OOo3.0)
+    And the 2nd reason of using an enhanced-path is that enhanced-path have a perfect mapping to
+    vmlpath.(You will find out that often, we even don't need to change the parameters).
     -->
     <xsl:template name="vmlpath2enhancedpath">
         <xsl:param name="vml-path"/>
@@ -1162,7 +1162,7 @@
         </xsl:choose>
     </xsl:template>
     <xsl:template name="get-number-before">
-        <!--  get $count number of number before current position , output format:number1 number2 ... numberN:newpostion 
+        <!--  get $count number of number before current position , output format:number1 number2 ... numberN:newposition
             skip $skipcount of numbers
         -->
         <xsl:param name="vml-path"/>
@@ -1216,7 +1216,7 @@
         </xsl:choose>
     </xsl:template>
     <xsl:template name="get-number-after">
-        <!--  get $count number of number after current position, output format:number1 number2 ... numberN:newpostion
+        <!--  get $count number of number after current position, output format:number1 number2 ... numberN:newposition
             skip $skipcount of numbers
         -->
         <xsl:param name="vml-path"/>
@@ -1439,7 +1439,7 @@
                         </xsl:call-template>
                     </xsl:when>
                     <xsl:when test="string-length(translate($curr-char ,  '+-' ,'') ) = 0  and string-length($number) &gt; 0">
-                        <!-- finsh it with +/- -->
+                        <!-- finish it with +/- -->
                         <xsl:call-template name="format-number-pos">
                             <xsl:with-param name="number" select="$number"/>
                             <xsl:with-param name="position" select="$position"/>
@@ -1465,7 +1465,7 @@
                 <xsl:variable name="curr-char" select="substring($vml-path, $position , 1)"/>
                 <xsl:choose>
                     <xsl:when test="string-length(translate($curr-char ,  'mlcxetrvnfsawqyb' ,'')) = 0 ">
-                        <!-- "MmZzLlHhVvCcSsQqTtAa" are all possiable  command chars -->
+                        <!-- "MmZzLlHhVvCcSsQqTtAa" are all possible command chars -->
                         <xsl:value-of select="concat( $curr-char , ':'  , $position +1)"/>
                     </xsl:when>
                     <xsl:when test="string-length(translate($curr-char ,  '+-.0123456789@' ,'')) = 0 ">

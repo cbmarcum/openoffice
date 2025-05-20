@@ -879,7 +879,7 @@ sal_uInt16 Writer::defineBitmap( const BitmapEx &bmpSource, sal_Int32 nJPEGQuali
 	}
 
 	//Figure out JPEG size
-	const sal_uInt8* pJpgData = NULL;;
+	const sal_uInt8* pJpgData = NULL;
 	sal_uInt32 nJpgDataLength = 0xffffffff;
 
 	Graphic aGraphic( bmpSource );
@@ -1345,7 +1345,7 @@ bool Writer::Impl_writeFilling( SvtGraphicFill& rFilling )
 
 /* CL: The idea was to export page fields as text fields that get theire
    string from a variable set with actionscript by each page. This didn't
-   work out since the formating is always wrong when text follows the
+   work out since the formatting is always wrong when text follows the
    page number field since pages greater one may require more space than
    page 1
 */

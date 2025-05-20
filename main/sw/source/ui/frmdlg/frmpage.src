@@ -19,8 +19,6 @@
  *
  *************************************************************/
 
-
-
 #include "frmui.hrc"
 #include "frmpage.hrc"
 #include "globals.hrc"
@@ -588,11 +586,11 @@ TabPage TP_GRF_EXT
 	Size = MAP_APPFONT ( 260, 185 ) ;
 	Bitmap BMP_EXAMPLE
 	{
-		File = "dog.png" ;
+		File = "example.png" ;
 	};
 	Bitmap BMP_EXAMPLE_HC
 	{
-		File = "dog_h.png" ;
+		File = "example_h.png" ;
 	};
 	FixedLine FL_CONNECT
 	{
@@ -624,7 +622,7 @@ TabPage TP_GRF_EXT
 		Size = MAP_APPFONT ( 12, 12 ) ;
 		Disable = TRUE ;
 		TabStop = TRUE ;
-		Text [ en-US ] = "~..." ;
+		Text = "~..." ;
 	};
 	CheckBox CB_VERT
 	{

@@ -46,7 +46,7 @@ import com.sun.star.uno.UnoRuntime;
 *  <li><code> setPropertyToDefault()</code></li>
 *  <li><code> getPropertyDefault()</code></li>
 * </ul>
-* Test is <b> NOT </b> multithread compilant. <p>
+* Test is <b> NOT </b> multithread compliant. <p>
 * After test completion object environment has to be recreated. <p>
 * <b>Note:</b> object tested must also implement
 * <code>com.sun.star.beans.XPropertySet</code> interface.
@@ -209,7 +209,7 @@ public class _XPropertyState extends MultiMethodTest {
         /**
         * Sets the property to default, then compares the current property
         * value to value received by method <code>getPropertyDefault</code>.
-        * Has <b> OK </b> status if the current proeprty value equals to
+        * Has <b> OK </b> status if the current property value equals to
         * default property. <p>
         * The following method tests are to be completed successfully before :
         * <ul>
@@ -267,4 +267,3 @@ public class _XPropertyState extends MultiMethodTest {
         }
 
  }// EOF _XPropertyState
-

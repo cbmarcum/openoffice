@@ -23,7 +23,6 @@
 package complex.bean;
 
 
-// import complexlib.ComplexTestCase;
 import java.io.File;
 import java.awt.Rectangle;
 // import java.awt.BorderLayout;
@@ -242,4 +241,3 @@ class ScreenComparer
     }
     
 }
-
